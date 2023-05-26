@@ -2,38 +2,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<style>
-@keyframes opacity-anim {
-	from { opacity: 0;  }
-    to { opacity: 1; }
-  }
-  @keyframes card-anim {
-	from { margin-top: -10rem; }
-    to { margin-top: -8rem; }
-  }
-	@keyframes top-anim {
-	from { margin-top: -4rem; }
-    to { margin-top: 0rem; }
-  }
-  @keyframes down-anim {
-	from { margin-bottom: -4rem; }
-    to { margin-bottom: 0rem; }
-  }
-  @keyframes zoom-anim {
-  from { transform: scale(0.5);}
-    to { transform: scale(1); }
-  }
-  @keyframes roatate-anim {
-  from { transform: rotate(360deg);}
-    to {  transform: rotate(0deg);}
-  }
-  .zoom-anim {animation:zoom-anim 6s; }
-  .roatate-anim {animation:roatate-anim 6s; }
-	.top-anim {animation:top-anim 6s; }
-  .card-anim {animation:card-anim 6s; margin-top: -8rem }
-  .down-anim {animation:down-anim 6s; }
-  .opacity-anim {animation:opacity-anim 6s; }
-	</style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -43,6 +11,7 @@
     <meta name="keywords" content="keywords,here">
     <link rel="stylesheet" href="https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css"/> <!--Replace with your tailwind.css once created-->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css" rel="stylesheet">
+    <link href="./style.css" rel="stylesheet">
 		
 </head>
 <body class="bg-gray-200 font-sans leading-normal tracking-normal">
@@ -67,24 +36,24 @@
 						<div class="flex w-1/2 pl-4 text-sm ">
 							<ul class="list-reset flex justify-between flex-1 md:flex-none items-center">
 								<li class="mr-2">
-									<a class=" inline-block px-5 py-1 text-center text-gray-200  bg-transparent border-2 border-gray-600 border-solid rounded-tr-lg rounded-bl-lg cursor-pointer  hover:text-white hover:border-white focus:shadow-xs "
-										href="#Intro">À propos</a>
+									<a class=" inline-block px-5 py-1 text-center text-gray-200 border-gray-500 bg-transparent border-2  border-solid rounded-tr-lg rounded-bl-lg cursor-pointer  hover:text-gray-300 hover:border-gray-600 focus:shadow-xs "
+										href="#Intro"><span>À propos</span></a>
 								</li>
 								<li class="mr-2">
-									<a class=" inline-block px-5 py-1 text-center text-gray-200  bg-transparent border-2 border-gray-600 border-solid rounded-tr-lg rounded-bl-lg cursor-pointer  hover:text-white hover:border-white focus:shadow-xs "
-										href="#Competances">Competances</a>
+                  <a class=" inline-block px-5 py-1 text-center text-gray-200 border-gray-500 bg-transparent border-2  border-solid rounded-tr-lg rounded-bl-lg cursor-pointer  hover:text-gray-300 hover:border-gray-600 focus:shadow-xs "
+										href="#Competances"><span>Competances/span></a>
 								</li>
 								<li class="mr-2">
-									<a class=" inline-block px-5 py-1 text-center text-gray-200  bg-transparent border-2 border-gray-600 border-solid rounded-tr-lg rounded-bl-lg cursor-pointer  hover:text-white hover:border-white focus:shadow-xs "
-										href="#Experiences">Experiances</a>
+									<a class=" inline-block px-5 py-1 text-center text-gray-200 border-gray-500 bg-transparent border-2  border-solid rounded-tr-lg rounded-bl-lg cursor-pointer  hover:text-gray-300 hover:border-gray-600 focus:shadow-xs "
+										href="#Experiences"><span>Experiances</span></a>
 								</li>
                 <li class="mr-2">
-									<a class=" inline-block px-5 py-1 text-center text-gray-200  bg-transparent border-2 border-gray-600 border-solid rounded-tr-lg rounded-bl-lg cursor-pointer  hover:text-white hover:border-white focus:shadow-xs "
-										href="#Education">Education</a>
+									<a class=" inline-block px-5 py-1 text-center text-gray-200 border-gray-500 bg-transparent border-2  border-solid rounded-tr-lg rounded-bl-lg cursor-pointer  hover:text-gray-300 hover:border-gray-600 focus:shadow-xs "
+										href="#Education"><span>Education</span></a>
 								</li>
 								<li class="mr-2">
-									<a class=" inline-block px-5 py-1 text-center text-gray-200  bg-transparent border-2 border-gray-600 border-solid rounded-tr-lg rounded-bl-lg cursor-pointer  hover:text-white hover:border-white focus:shadow-xs "
-										href="#Contact">Contact</a>
+									<a class=" inline-block px-5 py-1 text-center text-gray-200 border-gray-500 bg-transparent border-2  border-solid rounded-tr-lg rounded-bl-lg cursor-pointer  hover:text-gray-300 hover:border-gray-600 focus:shadow-xs "
+										href="#Contact"><span>Contact</span></a>
 								</li>
 							</ul>
 						</div>
@@ -105,11 +74,13 @@
 							<li class="mr-2">
 							<a class="inline-block text-yellow-700 hover:text-yellow-600 no-underline hover:text-white hover:text-underline text-center h-10 p-2 md:h-auto md:p-4 avatar"
 								data-tippy-content="@facebook" href="https://www.facebook.com/sharer/sharer.php?u=#">
+                <span>
 								<svg class="fill-current h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
 									<path d="M19 6h5V0h-5c-3.86 0-7 3.14-7 7v3H8v6h4v16h6V16h5l1-6h-6V7c0-.542.458-1 1-1z"></path>
 								</svg>
+              </span>
 							</a>
-					    	</li>
+					    </li>
 
 							<li class="mr-2">
 					    	<a href="https://www.linkedin.com/in/zouhaier-barrouta/overlay/1635527543350/single-media-viewer/?profileId=ACoAABrPha0BVp17FEdC7Q0Ja9k6UgSNO8QpkaA"	class=" inline-block px-5 py-1 text-center text-yellow-700  bg-transparent border-2 border-yellow-700 border-solid rounded-tr-lg rounded-bl-lg cursor-pointer  hover:text-yellow-600 hover:border-yellow-600 focus:shadow-xs ">
@@ -118,7 +89,7 @@
 								<svg class="animate-bounce w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
 									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
 								</svg>
-							    </span>
+							  </span>
 							
 					     	</a>
 						    </li>
@@ -157,7 +128,9 @@
         <div class="w-full md:w-1/3">
           <div class="m-6  flex items-center text-center">
             <div class="pr-4 py-6 ">
+              <div class="center">
               <img class="w-64 h-64 rounded-full  avatar zoom-anim " data-tippy-content="Author Name" src="./img.png" alt="Avatar of Author">
+              </div>
             </div>
           </div>
         </div>
@@ -209,7 +182,7 @@
 						</div>
 						<div class="flex-none mt-auto bg-white rounded-b rounded-t-none overflow-hidden shadow-lg p-6">
 							<div class="flex items-center justify-between">
-								<img class="w-8 h-8 rounded-full mr-4 avatar" data-tippy-content="Author Name" src="http://i.pravatar.cc/300" alt="Avatar of Author">
+								<img class="w-8 h-8 rounded-full mr-4 avatar roatate-anim" data-tippy-content="Author Name" src="http://i.pravatar.cc/300" alt="Avatar of Author">
 								<p class="text-gray-600 text-xs md:text-sm">1 MIN READ</p>
 							</div>
 						</div>
@@ -251,7 +224,7 @@
 						</div>
 						<div class="flex-none mt-auto bg-white rounded-b rounded-t-none overflow-hidden shadow-lg p-6">
 							<div class="flex items-center justify-between">
-								<img class="w-8 h-8 rounded-full mr-4 avatar" data-tippy-content="Author Name" src="http://i.pravatar.cc/300" alt="Avatar of Author">
+								<img class="w-8 h-8 rounded-full mr-4 avatar roatate-anim" data-tippy-content="Author Name" src="http://i.pravatar.cc/300" alt="Avatar of Author">
 								<p class="text-gray-600 text-xs md:text-sm">1 MIN READ</p>
 							</div>
 						</div>
@@ -313,10 +286,10 @@
 	<footer >	
 				<!--Author-->
 		<div class="flex w-full items-center font-sans p-8 md:p-24">
-			<img class="w-10 h-10 rounded-full mr-4" src="http://i.pravatar.cc/300" alt="Avatar of Author">
+			<img class="w-10 h-10 rounded-full mr-4 spin" src="http://i.pravatar.cc/300" alt="Avatar of Author">
 				<div class="flex-1">
 						<p class="text-base font-bold text-base md:text-xl leading-none">Ghostwind CSS</p>
-						<p class="text-gray-600 text-xs md:text-base">Tailwind CSS version of Ghost's Casper theme by <a class="text-gray-800 hover:text-green-500 no-underline border-b-2 border-green-500" href="https://www.tailwindtoolbox.com">TailwindToolbox.com</a></p>
+						<p class="text-gray-600 text-xs md:text-base">Tailwind CSS version of Ghost's Casper theme by TailwindToolbox.com</a></p>
 				</div>
 				<div class="justify-end">
 					<button class="bg-transparent border border-gray-500 hover:border-green-500 text-xs text-gray-500 hover:text-green-500 font-bold py-2 px-4 rounded-full" onclick="scrollTopAnimated()">Read More</button>
