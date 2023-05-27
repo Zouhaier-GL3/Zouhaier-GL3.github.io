@@ -61,9 +61,6 @@
    
 
     .spin {
-        width: 100px;
-        height: 100px;
-        background: red;
         animation: spin 50s linear infinite;
         animation-delay: calc(var(--delay) * -1s);
       }
@@ -81,3 +78,18 @@
 .down-anim {animation:down-anim 6s; }
 .opacity-anim {animation:opacity-anim 6s; }
 .zoom-anim {animation:zoom-anim 6s; }
+.zoom-hover:hover{ transform: scale(1.2); }
+
+.icon-anim{
+    position: relative;
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: 2;
+    animation-direction: alternate;  
+  }
+  
+  @keyframes example {
+    0%   {left:0%;transform: rotate(0deg); }
+    50%  {left:100%; transform: rotate(360deg); }
+    100% {left:0%;transform: rotate(0deg) ;}
+  }
