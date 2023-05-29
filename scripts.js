@@ -16,7 +16,6 @@ $(document).on("click","a",function(e){
     }, 800);
 });
 
-
 function redirectToCv() {
     window.open("https://www.linkedin.com/in/zouhaier-barrouta/overlay/1635527543350/single-media-viewer/?profileId=ACoAABrPha0BVp17FEdC7Q0Ja9k6UgSNO8QpkaA", "_blank");
 }
