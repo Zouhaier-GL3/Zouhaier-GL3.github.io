@@ -17,7 +17,7 @@
 <body class="bg-gray-200 font-sans leading-normal tracking-normal">
 
 	<!--Header-->
-	<div class="w-full m-0 p-0 bg-cover bg-bottom" style="background-image:url('cover.jpg'); height: 50vh; max-height:460px;">
+	<div class="w-full m-0 p-0 bg-cover bg-bottom" style=" height: 50vh; max-height:460px; background: linear-gradient(to bottom,rgba(0, 0, 0, 0.752),rgba(0, 0, 0, 0.703)),center / cover url('./cover.jpg');">
 			<div class="container max-w-4xl mx-auto pt-8 md:pt-16 text-center break-normal">
 				<!--Title-->
 					<p class="text-white font-extrabold text-3xl md:text-5xl top-anim ">
@@ -63,19 +63,17 @@
 							<ul class="list-reset flex justify-between flex-1 md:flex-none items-center">
 							<li class="mr-2">
 							<a class="inline-block text-yellow-600 hover:text-yellow-700 no-underline hover:text-white hover:text-underline text-center h-10 p-2 md:h-auto md:p-4 avatar"
-								data-tippy-content="@twitter" href="https://twitter.com/intent/tweet?url=#">
-								<svg class="fill-current h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
-									<path
-										d="M30.063 7.313c-.813 1.125-1.75 2.125-2.875 2.938v.75c0 1.563-.188 3.125-.688 4.625a15.088 15.088 0 0 1-2.063 4.438c-.875 1.438-2 2.688-3.25 3.813a15.015 15.015 0 0 1-4.625 2.563c-1.813.688-3.75 1-5.75 1-3.25 0-6.188-.875-8.875-2.625.438.063.875.125 1.375.125 2.688 0 5.063-.875 7.188-2.5-1.25 0-2.375-.375-3.375-1.125s-1.688-1.688-2.063-2.875c.438.063.813.125 1.125.125.5 0 1-.063 1.5-.25-1.313-.25-2.438-.938-3.313-1.938a5.673 5.673 0 0 1-1.313-3.688v-.063c.813.438 1.688.688 2.625.688a5.228 5.228 0 0 1-1.875-2c-.5-.875-.688-1.813-.688-2.75 0-1.063.25-2.063.75-2.938 1.438 1.75 3.188 3.188 5.25 4.25s4.313 1.688 6.688 1.813a5.579 5.579 0 0 1 1.5-5.438c1.125-1.125 2.5-1.688 4.125-1.688s3.063.625 4.188 1.813a11.48 11.48 0 0 0 3.688-1.375c-.438 1.375-1.313 2.438-2.563 3.188 1.125-.125 2.188-.438 3.313-.875z">
-									</path>
-								</svg>
+								data-tippy-content="@Linkedin" onclick="redirectToLinkedin()">
+                <svg class="fill-current h-4 zoom-hover" xmlns="http://www.w3.org/2000/svg" data-name="Layer 1" viewBox="0 0 24 24" id="linkedin">
+                  <path d="M20.47,2H3.53A1.45,1.45,0,0,0,2.06,3.43V20.57A1.45,1.45,0,0,0,3.53,22H20.47a1.45,1.45,0,0,0,1.47-1.43V3.43A1.45,1.45,0,0,0,20.47,2ZM8.09,18.74h-3v-9h3ZM6.59,8.48h0a1.56,1.56,0,1,1,0-3.12,1.57,1.57,0,1,1,0,3.12ZM18.91,18.74h-3V13.91c0-1.21-.43-2-1.52-2A1.65,1.65,0,0,0,12.85,13a2,2,0,0,0-.1.73v5h-3s0-8.18,0-9h3V11A3,3,0,0,1,15.46,9.5c2,0,3.45,1.29,3.45,4.06Z"></path>
+                </svg>
 							</a>
 						    </li>
 							<li class="mr-2">
 							<a class="inline-block text-yellow-600 hover:text-yellow-700 no-underline hover:text-white hover:text-underline text-center h-10 p-2 md:h-auto md:p-4 avatar"
-								data-tippy-content="@facebook" href="https://www.facebook.com/sharer/sharer.php?u=#">
+								data-tippy-content="@facebook" onclick="redirectToFacebook()">
                 <span>
-								<svg class="fill-current h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+								<svg class="fill-current h-4 zoom-hover" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
 									<path d="M19 6h5V0h-5c-3.86 0-7 3.14-7 7v3H8v6h4v16h6V16h5l1-6h-6V7c0-.542.458-1 1-1z"></path>
 								</svg>
               </span>
@@ -83,15 +81,16 @@
 					    </li>
 
 							<li class="mr-2">
-					    	<a href="https://www.linkedin.com/in/zouhaier-barrouta/overlay/1635527543350/single-media-viewer/?profileId=ACoAABrPha0BVp17FEdC7Q0Ja9k6UgSNO8QpkaA"	class=" inline-block px-5 py-1 text-center text-yellow-600  bg-transparent border-2 border-yellow-600 border-solid rounded-tr-lg rounded-bl-lg cursor-pointer  hover:text-yellow-700 hover:border-yellow-700 focus:shadow-xs ">
+              
+					    	<a onclick="redirectToCv()" 	class=" inline-block px-5 py-1 text-center text-yellow-600  bg-transparent border-2 border-yellow-600 border-solid rounded-tr-lg rounded-bl-lg cursor-pointer  hover:text-yellow-700 hover:border-yellow-700 focus:shadow-xs ">
 								<span >	Télecharger mon cv</span>
 								<span class=" inline-block">
 								<svg class="animate-bounce w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
 									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
 								</svg>
 							  </span>
-							
 					     	</a>
+           
 						    </li>
 						</div>
 
@@ -122,7 +121,6 @@
               </p>
             </div>
           </div>
-         
         </div>
 
         <div class="w-full md:w-1/3">
@@ -142,7 +140,7 @@
 				<div class="flex flex-wrap justify-between pt-8 -mx-6" ">
         				<!--2/3 col -->
 					<div class="w-full md:w-full p-6 flex flex-col flex-grow flex-shrink" id="Competances">
-						<div class="flex-1 bg-white rounded-t rounded-b-none overflow-hidden shadow-lg px-8">
+						<div class="flex-1 bg-white rounded-t rounded-b-none overflow-hidden shadow-lg px-8 py-2">
               <section class="text-gray-600 body-font overflow-hidden">
                 <div class="container px-5 py-8 mx-auto">
                   <div class="-my-8 divide-y-2 divide-gray-100">
@@ -165,19 +163,21 @@
                                       <p class="text-sm mt-1 mr-0 mb-0 ml-0 font-semi-bold text-gray-700 mb-2">- S’assurer du respect des normes et standards appliqués.</p>
 
                         
-                                      <div class="flex-none mt-auto  overflow-hidden  p-4">
+                                      <div class="flex-none mt-auto  overflow-hidden p-4">
                                         <div class="flex items-center justify-between">
                                           <div class="flex h-12 w-12 items-center text-black">
                                             <span class="tag w-full text-center text-xl font-medium text-gray-700 group-hover:text-green-900 rounded-full mt-2">
-                                              <img src="./addinn.jpg" class="mx-auto h-12 w-24 rounded-lg mt-2 zoom-hover icon-anim" >
+                                              <img src="./experiences/add-inn.jpg" class="mx-auto h-12 w-24 rounded-lg mt-2 zoom-hover icon-anim" >
                                             </span>
                                           </div>
-                                          <button class="text-indigo-500 inline-flex items-center mt-2 text-sm">Voir plus
-                                            <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                              <path d="M5 12h14"></path>
-                                              <path d="M12 5l7 7-7 7"></path>
-                                            </svg>
-                                          </button>
+                                         
+                                            <button class="text-indigo-500 inline-flex items-center mt-2 text-sm" type="submit" onclick="redirectToAddinn()" >Voir plus
+                                              <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                                <path d="M5 12h14"></path>
+                                                <path d="M12 5l7 7-7 7"></path>
+                                              </svg>
+                                            </button>
+                                     
                                         </div>
                                       </div>
                       </div>
@@ -201,7 +201,7 @@
                           <p class="text-sm mt-1 mr-0 mb-0 ml-0 font-semi-bold text-gray-700 mb-2"> - Identifier, comprendre et analyser les besoins spécifiques des clients</p>
                             <p class="text-sm mt-1 mr-0 mb-0 ml-0 font-semi-bold text-gray-700 mb-2"> - Concevoir et développer des sites web/modules spécifiques</p>
                               <p class="text-sm mt-1 mr-0 mb-0 ml-0 font-semi-bold text-gray-700 mb-2"> - Elaborer plusieurs tests de vérification</p>
-                                <p class="text-sm mt-1 mr-0 mb-0 ml-0 font-semi-bold text-gray-700 mb-2"> - Corriger des bugs</p>
+                                <p class="text-sm mt-1 mr-0 mb-0 ml-0 font-semi-bold text-gray-700 mb-2"> - Corriger des bugs </p>
                                   <p class="text-sm mt-1 mr-0 mb-0 ml-0 font-semi-bold text-gray-700 mb-2"> - Concevoir des prototypes et interfaces web.</p>
                       
                         
@@ -209,15 +209,17 @@
                                     <div class="flex items-center justify-between">
                                       <div class="flex h-12 w-12 items-center text-black">
                                         <span class="tag w-full text-center text-xl font-medium text-gray-700 group-hover:text-green-900 rounded-full mt-2">
-                                          <img src="./itqan.png" class="mx-auto h-12 w-24 rounded-lg mt-2 zoom-hover icon-anim" >
+                                          <img src="./experiences/itqan.png" class="mx-auto h-12 w-24 rounded-lg mt-2 zoom-hover icon-anim" >
                                         </span>
                                       </div>
-                                      <button class="text-indigo-500 inline-flex items-center mt-2 text-sm">Voir plus
-                                        <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                          <path d="M5 12h14"></path>
-                                          <path d="M12 5l7 7-7 7"></path>
-                                        </svg>
-                                      </button>
+                                  
+                                        <button class="text-indigo-500 inline-flex items-center mt-2 text-sm" type="submit" onclick="redirectToItqan()">Voir plus
+                                          <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                            <path d="M5 12h14"></path>
+                                            <path d="M12 5l7 7-7 7"></path>
+                                          </svg>
+                                        </button>
+                                    
                                     </div>
                                   </div>
                       </div>
@@ -231,7 +233,7 @@
                   <div class="-my-8 divide-y-2 divide-gray-100">
                     <div class="py-8 flex flex-wrap md:flex-nowrap">
                       <div class="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
-                        <span class="text-xl font-bold text-gray-900"">ADDINN Tunisie </span>
+                        <span class="text-xl font-bold text-gray-900"">M-GNIC Tunisie </span>
                         <span class="mt-1 text-purple-600 text-sm">Du: 15/02/2021 Jusqu'à: 30/02/2023</span>
                       </div>
                       <div class="md:flex-grow  bg-gray-200 rounded-lg p-4">
@@ -245,10 +247,10 @@
                           <div class="flex items-center justify-between">
                             <div class="flex h-12 w-12 items-center text-black">
                               <span class="tag w-full text-center text-xl font-medium text-gray-700 group-hover:text-green-900 rounded-full mt-2">
-                                <img src="./m-gnic.png" class="mx-auto h-12 w-24 rounded-lg mt-2 zoom-hover" >
+                                <img src="./experiences/m-gnic.png" class="mx-auto h-12 w-24 rounded-lg mt-2 zoom-hover icon-anim" >
                               </span>
                             </div>
-                            <button class="text-indigo-500 inline-flex items-center mt-2 text-sm">Voir plus
+                            <button class="text-indigo-500 inline-flex items-center mt-2 text-sm" onclick="redirectToMgnic()">Voir plus
                               <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
                                 <path d="M5 12h14"></path>
                                 <path d="M12 5l7 7-7 7"></path>
@@ -288,104 +290,306 @@
 					<div class="w-full md:w-1/2 p-6 flex flex-col flex-grow flex-shrink" >
 						<div class="flex-1 bg-white rounded-t rounded-b-none overflow-hidden shadow-lg" id="Experiences">
               <div class="mr-6 ml-6  items-center py-6 ">
-                <p class="text-xl font-bold text-gray-900">Mes Experiences 👋</p>
-                <p class="text-sm mt-1 mr-0 mb-0 ml-0 font-semi-bold text-gray-700 mb-5">
-                  Je suis un ingénieur tunisien en génie logiciel. Je suis pleine de passion et de créativité. Avec une forte attention aux techniques de développement Web et Mobile (plus de 2 ans d'expérience).                 
-                </p>
-                <p class="text-sm mt-1 mr-0 mb-0 ml-0 font-semi-bold text-gray-700 mb-5">
-                  Pour l'instant, je travaille principalement sur le développement d'applications web côté Front-end en utilisant des techniques suivantes (angular, bootstrap, tailwind et javascript ... ).
-                </p>
-                <p class="text-sm mt-1 mr-0 mb-0 ml-0 font-semi-bold text-gray-700 mb-5">
-                 Au cours de mon expérience dans ce domaine, j'ai travaillé sur des projets sous forme de missions freelance, avec plusieurs langages de programmation.
-                 telles que (Symfony, .net Core, Node js).
-                </p>
-                <p class="text-sm mt-1 mr-0 mb-0 ml-0 font-semi-bold text-gray-700 mb-5">
-                 Je m'engage à fond dans la conception et le perfectionnement de mes compétences. Je suis extrêmement motivé, excité et toujours prêt à en apprendre davantage.
-                </p>
+                <p class="text-xl font-bold text-gray-900">Mes Experiences</p>
+                <p class="text-xl font-medium text-gray-900">Développement et intégration des interfaces avec Angular 13 (Angular Framework).</p> 
+                <div class="bg-gray-200 rounded-lg p-4 mt-2">  
+                  <div class="bg-transparent border border-gray-500 hover:border-green-500 text-xs text-gray-500 hover:text-green-500 font-bold py-2 px-4 rounded-full text-center"><p>Projet 1 : Solution Poc Réclamation</p></div>
+                  <p class="text-sm mt-1 mr-0 mb-0 ml-0 font-semi-bold text-gray-700 mb-5">Conception et développement d'une application web relative aux Réclamations Bancaires, consiste à digitaliser les procédures de gestion et de suivi des réclamations(STB). </p> 
+                  <p class="text-sm mt-1 mr-0 mb-0 ml-0 font-semi-bold text-gray-700 mb-5"><span class="font-medium">Technologie utilisé :</span> ASP.Net Core / Angular13</p> 
+                </div>
+                <div class="bg-gray-200 rounded-lg p-4 mt-2">  
+                  <div class="bg-transparent border border-gray-500 hover:border-green-500 text-xs text-gray-500 hover:text-green-500 font-bold py-2 px-4 rounded-full text-center"><p>Projet 2 : Solution FTUSA</p></div>
+                  <p class="text-sm mt-1 mr-0 mb-0 ml-0 font-semi-bold text-gray-700 mb-5">Conception et développement d'une application web relative à l'Assurance, consiste à digitaliser les procédures de gestion et de suivi des dossiers </p>                                                                           
+                  <p class="text-sm mt-1 mr-0 mb-0 ml-0 font-semi-bold text-gray-700 mb-5"><span class="font-medium">Technologies utilisées : </span> ASP.Net Core / Angular13</p> 
+                </div>
+                <div class="bg-gray-200 rounded-lg p-4 mt-2">  
+                  <div class="bg-transparent border border-gray-500 hover:border-green-500 text-xs text-gray-500 hover:text-green-500 font-bold py-2 px-4 rounded-full text-center"><p>Projet 3 : Smart Claim</p></div>
+                  <p class="text-sm mt-1 mr-0 mb-0 ml-0 font-semi-bold text-gray-700 mb-5">Conception et développement d'une application web relative à l'Assurance, consiste à digitaliser les procédures de gestion et de suivi des sinistres . </p>                                                            
+                  <p class="text-sm mt-1 mr-0 mb-0 ml-0 font-semi-bold text-gray-700 mb-5"><span class="font-medium">Technologies utilisées :</span> PostgreSQL/ Node.js / Angular13</p> 
+                </div>
               </div>
 						</div>
 					</div>
 
 					<!--1/2 col -->
 					<div class="w-full md:w-1/2 p-6 flex flex-col flex-grow flex-shrink">
-						<div class="flex-1 flex-row bg-white rounded-t rounded-b-none overflow-hidden shadow-lg">
-							<a href="#" class="flex flex-wrap no-underline hover:no-underline">	
-								<img src="https://source.unsplash.com/collection/764827/800x600" class="h-full w-full rounded-t pb-6">
-								<p class="w-full text-gray-600 text-xs md:text-sm px-6">GETTING STARTED</p>
-								<div class="w-full font-bold text-xl text-gray-900 px-6">Lorem ipsum dolor sit amet.</div>
-								<p class="text-gray-800 font-serif text-base px-6 mb-5">
-									Lorem ipsum eu nunc commodo posuere et sit amet ligula. 
-								</p>
-							</a>
-						</div>
-						<div class="flex-none mt-auto bg-white rounded-b rounded-t-none overflow-hidden shadow-lg p-6">
-							<div class="flex items-center justify-between">
-								<img class="w-8 h-8 rounded-full mr-4 avatar roatate-anim" data-tippy-content="Author Name" src="http://i.pravatar.cc/300" alt="Avatar of Author">
-								<p class="text-gray-600 text-xs md:text-sm">1 MIN READ</p>
-							</div>
+						<div class="flex-none bg-white rounded-b rounded-lg overflow-hidden shadow-lg px-6 pb-8">
+              <div class="slide-container rounded py-8">
+                <span id="slider1"></span>
+                <span id="slider2"></span>
+                <span id="slider3"></span>
+                <span id="slider4"></span>
+                <span id="slider5"></span>
+                <span id="slider6"></span>
+                <span id="slider7"></span>
+                <span id="slider8"></span>
+                <div class="image-container">
+                  <img src="./smart/Capture 1.PNG" alt="" class="slider-image ">
+                  <img src="./smart/Capture 11.PNG" alt="" class="slider-image ">
+                  <img src="./smart/Capture 7.PNG" alt="" class="slider-image ">
+                  <img src="./smart/Capture 4.PNG" alt="" class="slider-image ">
+                  <img src="./smart/Capture 5.PNG" alt="" class="slider-image ">
+                  <img src="./rec/1.png" alt="" class="slider-image ">
+                  <img src="./rec/4.png" alt="" class="slider-image ">
+                  <img src="./rec/3.png" alt="" class="slider-image ">
+                </div>
+                <div class="button-container">
+                  <a href="#slider1" class="slider-button"></a>
+                  <a href="#slider2" class="slider-button"></a>
+                  <a href="#slider3" class="slider-button"></a>
+                  <a href="#slider4" class="slider-button"></a>
+                  <a href="#slider5" class="slider-button"></a>
+                </div>
+              </div>
+              <p class="text-xl font-medium text-gray-900 mt-8">Développement et intégration des interfaces avec ADF (Alfresco Framework).</p> 
+              <div class="bg-gray-200 rounded-lg p-4 mt-2"> 
+                <div class="bg-transparent border border-gray-500 hover:border-green-500 text-xs text-gray-500 hover:text-green-500 font-bold py-2 px-4 rounded-full text-center"><p>Projet 4 :Solution Digi Recouvrement/ GED </p></div>
+                <p class="text-sm mt-1 mr-0 mb-0 ml-0 font-semi-bold text-gray-700 mb-5">Une application web pour la gestion des Recouvrements Bancaires en digitalisant les procédures de gestion et de suivi des recouvrements.</p> 
+                <p class="text-sm mt-1 mr-0 mb-0 ml-0 font-semi-bold text-gray-700 mb-5"><span class="font-medium">Technologies utilisées :</span> ADF-Alfresco / Share- Alfresco.</p>  
+              </div>
 						</div>
 					</div>
-    <!--1/1 col -->
-    <div class="w-full md:w-full p-6 flex flex-col flex-grow flex-shrink" >
-      <div class="flex-1 bg-white rounded-t rounded-b-none overflow-hidden shadow-lg" id="Education">
-        <div class="mr-6 ml-6  items-center py-6 ">
-          <p class="text-xl font-bold text-gray-900">Education 👋</p>
-          <p class="text-sm mt-1 mr-0 mb-0 ml-0 font-semi-bold text-gray-700 mb-5">
-            Je suis un ingénieur tunisien en génie logiciel. Je suis pleine de passion et de créativité. Avec une forte attention aux techniques de développement Web et Mobile (plus de 2 ans d'expérience).                 
-          </p>
-          <p class="text-sm mt-1 mr-0 mb-0 ml-0 font-semi-bold text-gray-700 mb-5">
-            Pour l'instant, je travaille principalement sur le développement d'applications web côté Front-end en utilisant des techniques suivantes (angular, bootstrap, tailwind et javascript ... ).
-          </p>
-          <p class="text-sm mt-1 mr-0 mb-0 ml-0 font-semi-bold text-gray-700 mb-5">
-           Au cours de mon expérience dans ce domaine, j'ai travaillé sur des projets sous forme de missions freelance, avec plusieurs langages de programmation.
-           telles que (Symfony, .net Core, Node js).
-          </p>
-          <p class="text-sm mt-1 mr-0 mb-0 ml-0 font-semi-bold text-gray-700 mb-5">
-           Je m'engage à fond dans la conception et le perfectionnement de mes compétences. Je suis extrêmement motivé, excité et toujours prêt à en apprendre davantage.
-          </p>
+
+        </div>
+        <!--/ Post Content-->
+<div class="flex flex-wrap justify-between pt-8 -mx-6 p-6" >
+  <!--FULL col -->
+<div class="w-full md:w-full p-6 flex flex-col flex-grow flex-shrink bg-white rounded shadow-lg" id="Competances">
+  <div class="text-center pb-4"><p class="text-xl font-bold text-gray-900">Mes competances</p></div>
+
+  <div class="containe">
+    <div class="brand-wheel">
+      <div class="brand-slide">
+        <div class="logo-div">
+          <img alt="#" src="./competances/AngularJS.png" class="w-24">
+        </div>
+        <div class="logo-div">
+          <img alt="#" src="./competances/Node.js.png" class="w-24">
+        </div>
+        <div class="logo-div">
+          <img alt="#" src="./competances/HTML5.png"  class="w-24">
+        </div>
+        <div class="logo-div">
+          <img alt="#" src="./competances/CSS3.png" class="w-24">
+        </div>
+        <div class="logo-div">
+          <img alt="#" src="./competances/Tailwind CSS.png" class="w-24">
+        </div>
+        <div class="logo-div">
+          <img alt="#" src="./competances/Sass.png" class="w-24">
+        </div>
+        <div class="logo-div">
+          <img alt="#" src="./competances/React.png" class="w-24">
+        </div>
+        <div class="logo-div">
+          <img alt="#" src="./competances/Symfony.png" class="w-24">
+        </div>
+        <div class="logo-div">
+          <img alt="#" src="./competances/NET core.png" class="w-24">
+        </div>
+      </div>
+      <div class="brand-slide delay">
+        <div class="logo-div">
+          <img alt="#" src="./competances/Postman.png" class="w-24">
+        </div>
+        <div class="logo-div">
+          <img alt="#" src="./competances/MongoDB.png" class="w-24">
+        </div>
+        <div class="logo-div">
+          <img alt="#" src="./competances/PostgresSQL.png" class="w-24">
+        </div>
+        <div class="logo-div">
+          <img alt="#" src="./competances/Firebase.png" class="w-24">
+        </div>
+        <div class="logo-div">
+          <img alt="#" src="./competances/Ubuntu.png" class="w-24">
+        </div>
+        <div class="logo-div">
+          <img alt="#" src="./competances/Jenkins.png" class="w-24">
+        </div>
+        <div class="logo-div">
+          <img alt="#" src="./competances/Git.png" class="w-24">
+        </div>
+        <div class="logo-div">
+          <img alt="#" src="./competances/GitLab.png" class="w-24">
+        </div>
+        <div class="logo-div">
+          <img alt="#" src="./competances/Jira.png" class="w-24">
+        </div>
+        <div class="logo-div">
+          <img alt="#" src="./competances/AWS.png" class="w-24">
+        </div>
+        <div class="logo-div">
+          <img alt="#" src="./competances/Unified Modelling Language (UML).png" class="w-24">
         </div>
       </div>
     </div>
+  </div>
+
+</div>
+</div>
+<div class="flex flex-wrap justify-between pt-4 -mx-6" ">
+  <!--1/1 col -->
+<div class="w-full md:w-full p-6 flex flex-col flex-grow flex-shrink" >
+<div class="flex-1 bg-white rounded-t rounded-b-none overflow-hidden shadow-lg" id="Education">
+<div class="mr-6 ml-6  items-center py-6 ">
+<p class="text-xl font-bold text-gray-900">Education </p>
+
+<div class="bg-gray-200 rounded-lg pt-4 pb-1 px-4 mt-2">  
+<p class="text-xl font-bold">
+Diplôme National D’ingénieur en Génie Logiciel Du: 2018/2019 Jusqu'à: 2020/2021.
+</p>
+<p class="text-sm mt-1 mr-0 mb-0 ml-0 font-semi-bold text-gray-700 mb-5">
+Ecole privée d'ingénieur TEK-UP, Tunis.
+</p>
+</div>
+
+<div class="bg-gray-200 rounded-lg pt-4 pb-1 px-4 mt-2">  
+<p class="text-xl font-bold">Diplôme Technicien Supérieur en Réseaux et Télécommunications Du: 2008/2009 Jusqu'à: 2011/2012.</p>
+<p class="text-sm mt-1 mr-0 mb-0 ml-0 font-semi-bold text-gray-700 mb-5">
+Institut supérieur des sciences appliquées et technologiées, Mahdia
+</p>
+</div>
+
+<div class="bg-gray-200 rounded-lg pt-4 pb-1 px-4 mt-2">  
+<p class="text-xl font-bold">Baccalauréat  Du: 1995/1996 Jusqu'à: 2008/2009.</p>
+<p class="text-sm mt-1 mr-0 mb-0 ml-0 font-semi-bold text-gray-700 mb-5">
+Baccalauréat Informatique au Lycée al emtyez ,Tozeur.
+</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+        <div class="flex flex-wrap justify-between pt-4 -mx-6">
          <!--1/1 col -->
-					<div class="w-full md:w-full p-6 flex flex-col flex-grow flex-shrink" >
+					<div class="w-full md:w-1/2 p-6 flex flex-col flex-grow flex-shrink" >
             <div class="flex-1 bg-white rounded-t rounded-b-none overflow-hidden shadow-lg" id="Contact">
-              <div class="mr-6 ml-6  items-center py-6 ">
-                <p class="text-xl font-bold text-gray-900">Contact 👋</p>
-                <p class="text-sm mt-1 mr-0 mb-0 ml-0 font-semi-bold text-gray-700 mb-5">
-                  Je suis un ingénieur tunisien en génie logiciel. Je suis pleine de passion et de créativité. Avec une forte attention aux techniques de développement Web et Mobile (plus de 2 ans d'expérience).                 
-                </p>
-                <p class="text-sm mt-1 mr-0 mb-0 ml-0 font-semi-bold text-gray-700 mb-5">
-                  Pour l'instant, je travaille principalement sur le développement d'applications web côté Front-end en utilisant des techniques suivantes (angular, bootstrap, tailwind et javascript ... ).
-                </p>
-                <p class="text-sm mt-1 mr-0 mb-0 ml-0 font-semi-bold text-gray-700 mb-5">
-                 Au cours de mon expérience dans ce domaine, j'ai travaillé sur des projets sous forme de missions freelance, avec plusieurs langages de programmation.
-                 telles que (Symfony, .net Core, Node js).
-                </p>
-                <p class="text-sm mt-1 mr-0 mb-0 ml-0 font-semi-bold text-gray-700 mb-5">
-                 Je m'engage à fond dans la conception et le perfectionnement de mes compétences. Je suis extrêmement motivé, excité et toujours prêt à en apprendre davantage.
-                </p>
+              <div class="mr-6 ml-6  items-center py-6">
+                <p class="text-xl font-bold text-gray-900 pb-6">Informations</p>
+              <div class="flex flex-wrap justify-between">
+               <div class="flex flex-wrap justify-between">
+                <div class="shrink-0">
+                  <div class="p-4 bg-blue-600 rounded-md shadow-md w-14 h-14 flex items-center justify-center">
+                    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="dollar-sign"
+                      class="w-3 text-white" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 288 512">
+                      <path fill="currentColor"
+                        d="M209.2 233.4l-108-31.6C88.7 198.2 80 186.5 80 173.5c0-16.3 13.2-29.5 29.5-29.5h66.3c12.2 0 24.2 3.7 34.2 10.5 6.1 4.1 14.3 3.1 19.5-2l34.8-34c7.1-6.9 6.1-18.4-1.8-24.5C238 74.8 207.4 64.1 176 64V16c0-8.8-7.2-16-16-16h-32c-8.8 0-16 7.2-16 16v48h-2.5C45.8 64-5.4 118.7.5 183.6c4.2 46.1 39.4 83.6 83.8 96.6l102.5 30c12.5 3.7 21.2 15.3 21.2 28.3 0 16.3-13.2 29.5-29.5 29.5h-66.3C100 368 88 364.3 78 357.5c-6.1-4.1-14.3-3.1-19.5 2l-34.8 34c-7.1 6.9-6.1 18.4 1.8 24.5 24.5 19.2 55.1 29.9 86.5 30v48c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16v-48.2c46.6-.9 90.3-28.6 105.7-72.7 21.5-61.6-14.6-124.8-72.5-141.7z">
+                      </path>
+                    </svg>
+                  </div>
+                </div>
+                <div class="grow ml-6">
+                  <p class="font-bold mb-1 text-sm">Sales questions</p>
+                  <p class="text-gray-500 text-sm">sales@example.com</p>
+                  <p class="text-gray-500 text-sm">+1 234-567-89</p>
+                </div>
+               </div>
+               <div class="flex flex-wrap justify-between ">
+                <div class="shrink-0">
+                  <div class="p-4 bg-blue-600 rounded-md shadow-md w-14 h-14 flex items-center justify-center">
+                    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="dollar-sign"
+                      class="w-3 text-white" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 288 512">
+                      <path fill="currentColor"
+                        d="M209.2 233.4l-108-31.6C88.7 198.2 80 186.5 80 173.5c0-16.3 13.2-29.5 29.5-29.5h66.3c12.2 0 24.2 3.7 34.2 10.5 6.1 4.1 14.3 3.1 19.5-2l34.8-34c7.1-6.9 6.1-18.4-1.8-24.5C238 74.8 207.4 64.1 176 64V16c0-8.8-7.2-16-16-16h-32c-8.8 0-16 7.2-16 16v48h-2.5C45.8 64-5.4 118.7.5 183.6c4.2 46.1 39.4 83.6 83.8 96.6l102.5 30c12.5 3.7 21.2 15.3 21.2 28.3 0 16.3-13.2 29.5-29.5 29.5h-66.3C100 368 88 364.3 78 357.5c-6.1-4.1-14.3-3.1-19.5 2l-34.8 34c-7.1 6.9-6.1 18.4 1.8 24.5 24.5 19.2 55.1 29.9 86.5 30v48c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16v-48.2c46.6-.9 90.3-28.6 105.7-72.7 21.5-61.6-14.6-124.8-72.5-141.7z">
+                      </path>
+                    </svg>
+                  </div>
+                </div>
+                <div class="grow ml-6">
+                  <p class="font-bold mb-1 text-sm">Sales questions</p>
+                  <p class="text-gray-500 text-sm">sales@example.com</p>
+                  <p class="text-gray-500 text-sm">+1 234-567-89</p>
+                </div>
+               </div>
+              </div>
+         
+              <div class="flex flex-wrap justify-between mt-12">
+                <div class="flex flex-wrap justify-between">
+                 <div class="shrink-0">
+                   <div class="p-4 bg-blue-600 rounded-md shadow-md w-14 h-14 flex items-center justify-center">
+                     <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="dollar-sign"
+                       class="w-3 text-white" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 288 512">
+                       <path fill="currentColor"
+                         d="M209.2 233.4l-108-31.6C88.7 198.2 80 186.5 80 173.5c0-16.3 13.2-29.5 29.5-29.5h66.3c12.2 0 24.2 3.7 34.2 10.5 6.1 4.1 14.3 3.1 19.5-2l34.8-34c7.1-6.9 6.1-18.4-1.8-24.5C238 74.8 207.4 64.1 176 64V16c0-8.8-7.2-16-16-16h-32c-8.8 0-16 7.2-16 16v48h-2.5C45.8 64-5.4 118.7.5 183.6c4.2 46.1 39.4 83.6 83.8 96.6l102.5 30c12.5 3.7 21.2 15.3 21.2 28.3 0 16.3-13.2 29.5-29.5 29.5h-66.3C100 368 88 364.3 78 357.5c-6.1-4.1-14.3-3.1-19.5 2l-34.8 34c-7.1 6.9-6.1 18.4 1.8 24.5 24.5 19.2 55.1 29.9 86.5 30v48c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16v-48.2c46.6-.9 90.3-28.6 105.7-72.7 21.5-61.6-14.6-124.8-72.5-141.7z">
+                       </path>
+                     </svg>
+                   </div>
+                 </div>
+                 <div class="grow ml-6">
+                  <p class="font-bold mb-1 text-sm">Sales questions</p>
+                   <p class="text-gray-500 text-sm">sales@example.com</p>
+                   <p class="text-gray-500 text-sm">+1 234-567-89</p>
+                 </div>
+                </div>
+                
+                <div class="flex flex-wrap justify-between">
+                 <div class="shrink-0">
+                   <div class="p-4 bg-blue-600 rounded-md shadow-md w-14 h-14 flex items-center justify-center">
+                     <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="dollar-sign"
+                       class="w-3 text-white" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 288 512">
+                       <path fill="currentColor"
+                         d="M209.2 233.4l-108-31.6C88.7 198.2 80 186.5 80 173.5c0-16.3 13.2-29.5 29.5-29.5h66.3c12.2 0 24.2 3.7 34.2 10.5 6.1 4.1 14.3 3.1 19.5-2l34.8-34c7.1-6.9 6.1-18.4-1.8-24.5C238 74.8 207.4 64.1 176 64V16c0-8.8-7.2-16-16-16h-32c-8.8 0-16 7.2-16 16v48h-2.5C45.8 64-5.4 118.7.5 183.6c4.2 46.1 39.4 83.6 83.8 96.6l102.5 30c12.5 3.7 21.2 15.3 21.2 28.3 0 16.3-13.2 29.5-29.5 29.5h-66.3C100 368 88 364.3 78 357.5c-6.1-4.1-14.3-3.1-19.5 2l-34.8 34c-7.1 6.9-6.1 18.4 1.8 24.5 24.5 19.2 55.1 29.9 86.5 30v48c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16v-48.2c46.6-.9 90.3-28.6 105.7-72.7 21.5-61.6-14.6-124.8-72.5-141.7z">
+                       </path>
+                     </svg>
+                   </div>
+                 </div>
+                 <div class="grow ml-6">
+                   <p class="font-bold mb-1 text-sm">Sales questions</p>
+                   <p class="text-gray-500 text-sm">sales@example.com</p>
+                   <p class="text-gray-500 text-sm">+1 234-567-89</p>
+                 </div>
+                </div>
+               </div>
+              </div>
+        
+                </div>
+              </div>
+               <!--1/1 col -->
+					<div class="w-full md:w-1/2 p-6 flex flex-col flex-grow flex-shrink" >
+            <div class="flex-1 bg-white rounded-t rounded-b-none overflow-hidden shadow-lg" id="Contact">
+              <div class="mr-6 ml-6  items-center py-2 ">
+
+                <div class="py-4  px-4 mx-auto ">
+                  <p class="text-xl font-bold text-gray-900 pb-4">Contact </p>
+                  <form action="#" class="space-y-8">
+                      <div>
+                          <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Your email</label>
+                          <input type="email" id="email" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" placeholder="name@flowbite.com" required>
+                      </div>
+                      <div>
+                          <label for="subject" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Subject</label>
+                          <input type="text" id="subject" class="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" placeholder="Let us know how we can help you" required>
+                      </div>
+                      <div class="sm:col-span-2">
+                          <label for="message" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400">Your message</label>
+                          <textarea id="message" rows="6" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Leave a comment..."></textarea>
+                      </div>
+                      <button type="submit" class="py-3 px-5 text-sm font-medium text-center text-white rounded-lg bg-primary-700 sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">Send message</button>
+                  </form>
+                </div>
+      
+              </div>
+              </div>
               </div>
 						</div>
 					</div>
 
 				</div>
-				<!--/ Post Content-->
-						
-			</div>
 		
+			</div>
 		</div>
-	
   </div>
 	
 
 
-	<footer >	
+	<footer class="w-full m-0 p-0 bg-cover bg-bottom" style=" height: 50vh; max-height:460px; background: linear-gradient(to bottom,rgba(0, 0, 0, 0.752),rgba(0, 0, 0, 0.703)),center / cover url('./cover.jpg');">	
 				<!--Author-->
 		<div class="flex w-full items-center font-sans p-8 md:p-24">
-			<img class="w-10 h-10 rounded-full mr-4 spin" src="http://i.pravatar.cc/300" alt="Avatar of Author">
+			<img class="w-24 h-24 rounded-full mr-4 spin" src="./img.png" alt="Avatar of Author">
 				<div class="flex-1">
-						<p class="text-base font-bold text-base md:text-xl leading-none">Ghostwind CSS</p>
-						<p class="text-gray-600 text-xs md:text-base">Tailwind CSS version of Ghost's Casper theme by TailwindToolbox.com</a></p>
+						<p class="text-white font-bold text-base md:text-xl leading-none">Ghostwind CSS</p>
+						<p class="text-gray-200 text-xs md:text-base">Tailwind CSS version of Ghost's Casper theme by TailwindToolbox.com</a></p>
 				</div>
 				<div class="justify-end">
 					<button class="bg-transparent border border-gray-500 hover:border-green-500 text-xs text-gray-500 hover:text-green-500 font-bold py-2 px-4 rounded-full" onclick="scrollTopAnimated()">Read More</button>
@@ -398,4 +602,5 @@
 	<script src="https://unpkg.com/tippy.js@4"></script>
 	<script src="https://code.jquery.com/jquery-3.4.1.min.js"> </script>
 	<script src= "./scripts.js"> </script>
+
 </html>
