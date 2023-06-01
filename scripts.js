@@ -36,3 +36,6 @@ function redirectToMgnic() {
     window.open("http://www.made-in-tunisia.net/vitrine/contact.php?tc1=lKyYnquW", "_blank");
 }
 
+function redirectToGit() {
+    window.open("https://github.com/Zouhaier-GL3")
+}

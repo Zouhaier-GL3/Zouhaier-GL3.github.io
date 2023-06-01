@@ -1,441 +1,444 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Portfolio Zouhaier Barrouta </title>
-    <meta name="author" content="name">
-    <meta name="description" content="description here">
-    <meta name="keywords" content="keywords,here">
-    <link rel="stylesheet" href="https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css"/> <!--Replace with your tailwind.css once created-->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css" rel="stylesheet">
-    <link href="./style.css" rel="stylesheet">
-		
+    <meta name="keywords" content="tailwind,tailwindcss,tailwind css,css,starter template,free template,admin templates, admin template, admin dashboard, free tailwind templates, tailwind example">
+    <!-- Css -->
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,600,600i,700,700i" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abel|Archivo+Black|Barlow">
+    <title>Dashboard | Tailwind Admin</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-gray-200 font-sans leading-normal tracking-normal">
 
-	<!--Header-->
-	<div class="w-full m-0 p-0 bg-cover bg-bottom" style=" height: 50vh; max-height:460px; background: linear-gradient(to bottom,rgba(0, 0, 0, 0.752),rgba(0, 0, 0, 0.703)),center / cover url('./cover.jpg');">
-			<div class="container max-w-4xl mx-auto pt-8 md:pt-16 text-center break-normal">
-				<!--Title-->
-					<p class="text-white font-extrabold text-3xl md:text-5xl top-anim ">
-					  Zouhaier Barrouta
-					</p>
+<body class="bg-gray-200">
+    <!-- component -->
+
+    <div class="overflow-hidden shadow ">
+        <div class="height-anim" style=" height: 50vh; max-height:400px; background: linear-gradient(to bottom,rgba(0, 0, 0, 0.752),rgba(0, 0, 0, 0.703)),center / cover url('./cover.jpg');"></div>
+    </div>
+    <div class="-mt-20 top-anim flex justify-center">
+        <img src="./img.png" alt=""  class="rounded-full border-solid border-gray-200 border-2 -mt-3 w-48 bg-gray-200 text-center items-center">
+    </div>
+    <div class="text-center px-3 pb-6 pt-2">
+        <h3 class="text-black text-2xl font-bold ">Zouhaier Barrouta</h3>
+        <p class="mt-2  text-sm font-sans font-light text-grey-700">Full-stack js developer</p>
+     </div>
+    <div>
+        <div class="d-flex justify-between -mt-24 social-top px-12">
+            <div class="flex flex-wrap justify-center gap-2 px-4 h-8 pt-2">
+                <button class="bg-blue-500 p-2 font-semibold text-white inline-flex items-center space-x-2 rounded zoom-hover" onclick="redirectToFacebook()">
+                  <svg class="w-5 h-5 fill-current" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" /></svg>
+                </button>
+        
+                <button class="bg-blue-400 p-2 font-semibold text-white inline-flex items-center space-x-2 rounded zoom-hover">
+                  <svg class="w-5 h-5 fill-current" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z" /></svg>
+                </button>
+        
+                <button class="bg-blue-600 p-2 font-semibold text-white inline-flex items-center space-x-2 rounded zoom-hover" onclick="redirectToLinkedin()">
+                  <svg class="w-5 h-5 fill-current" role="img" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
+                    <g><path d="M218.123122,218.127392 L180.191928,218.127392 L180.191928,158.724263 C180.191928,144.559023 179.939053,126.323993 160.463756,126.323993 C140.707926,126.323993 137.685284,141.757585 137.685284,157.692986 L137.685284,218.123441 L99.7540894,218.123441 L99.7540894,95.9665207 L136.168036,95.9665207 L136.168036,112.660562 L136.677736,112.660562 C144.102746,99.9650027 157.908637,92.3824528 172.605689,92.9280076 C211.050535,92.9280076 218.138927,118.216023 218.138927,151.114151 L218.123122,218.127392 Z M56.9550587,79.2685282 C44.7981969,79.2707099 34.9413443,69.4171797 34.9391618,57.260052 C34.93698,45.1029244 44.7902948,35.2458562 56.9471566,35.2436736 C69.1040185,35.2414916 78.9608713,45.0950217 78.963054,57.2521493 C78.9641017,63.090208 76.6459976,68.6895714 72.5186979,72.8184433 C68.3913982,76.9473153 62.7929898,79.26748 56.9550587,79.2685282 M75.9206558,218.127392 L37.94995,218.127392 L37.94995,95.9665207 L75.9206558,95.9665207 L75.9206558,218.127392 Z M237.033403,0.0182577091 L18.8895249,0.0182577091 C8.57959469,-0.0980923971 0.124827038,8.16056231 -0.001,18.4706066 L-0.001,237.524091 C0.120519052,247.839103 8.57460631,256.105934 18.8895249,255.9977 L237.033403,255.9977 C247.368728,256.125818 255.855922,247.859464 255.999,237.524091 L255.999,18.4548016 C255.851624,8.12438979 247.363742,-0.133792868 237.033403,0.000790807055"></path></g>
+                  </svg>
+                </button>
+        
+                <button class="bg-red-600 p-2 font-semibold text-white inline-flex items-center space-x-2 rounded zoom-hover">
+                  <svg class="w-5 h-5 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z" /></svg>
+                </button>
+        
+                <button class="bg-gray-700 p-2 font-semibold text-white inline-flex items-center space-x-2 rounded zoom-hover" onclick="redirectToGit()">
+                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="w-5" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24">
+                    <g fill="none"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385c.6.105.825-.255.825-.57c0-.285-.015-1.23-.015-2.235c-3.015.555-3.795-.735-4.035-1.41c-.135-.345-.72-1.41-1.23-1.695c-.42-.225-1.02-.78-.015-.795c.945-.015 1.62.87 1.845 1.23c1.08 1.815 2.805 1.305 3.495.99c.105-.78.42-1.305.765-1.605c-2.67-.3-5.46-1.335-5.46-5.925c0-1.305.465-2.385 1.23-3.225c-.12-.3-.54-1.53.12-3.18c0 0 1.005-.315 3.3 1.23c.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23c.66 1.65.24 2.88.12 3.18c.765.84 1.23 1.905 1.23 3.225c0 4.605-2.805 5.625-5.475 5.925c.435.375.81 1.095.81 2.22c0 1.605-.015 2.895-.015 3.3c0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z" fill="currentColor" /></g>
+                  </svg>
+                </button>
+        
+                <button class="bg-red-500 p-2 font-semibold text-white inline-flex items-center space-x-2 rounded zoom-hover">
+                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="w-5" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><g fill="none"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 0C5.372 0 0 5.373 0 12s5.372 12 12 12c6.627 0 12-5.373 12-12S18.627 0 12 0zm.14 19.018c-3.868 0-7-3.14-7-7.018c0-3.878 3.132-7.018 7-7.018c1.89 0 3.47.697 4.682 1.829l-1.974 1.978v-.004c-.735-.702-1.667-1.062-2.708-1.062c-2.31 0-4.187 1.956-4.187 4.273c0 2.315 1.877 4.277 4.187 4.277c2.096 0 3.522-1.202 3.816-2.852H12.14v-2.737h6.585c.088.47.135.96.135 1.474c0 4.01-2.677 6.86-6.72 6.86z" fill="currentColor"/></g></svg>
+                </button>
+              </div>
+       
+              <div class="social-top">
+                    <div class="container flex items-center justify-center p-3 mx-auto text-gray-600 capitalize dark:text-gray-300">
+                      
+                        <a href="#" class="hover:shadow-lg hover:shadow-blue-500/50 border-b-2 text-gray-800 border-transparent hover:text-gray-800 dark:hover:text-gray-900 hover:border-blue-500 mx-1.5 sm:mx-4 text-sm font-bold">Experiances</a>
+                
+                        <a href="#" class="hover:shadow-lg hover:shadow-blue-500/50 border-b-2 text-gray-800 border-transparent hover:text-gray-800 dark:hover:text-gray-900 hover:border-blue-500 mx-1.5 sm:mx-4 text-sm font-bold">Competances</a>
+                
+                        <a href="#" class="hover:shadow-lg hover:shadow-blue-500/50 border-b-2 text-gray-800 border-transparent hover:text-gray-800 dark:hover:text-gray-900 hover:border-blue-500 mx-1.5 sm:mx-4 text-sm font-bold">Diplômes</a>
+                
+                    </div>
+              </div>
+        </div>
+    <div class="px-12 py-8 mt-4">   
+	<div class="rounded-lg bg-center bg-cover bg-no-repeat items-center justify-center flex flex-col" style=" background: linear-gradient(to bottom,rgba(0, 0, 0, 0.752),rgba(0, 0, 0, 0.703)),center / cover url('./cover.jpg');">
+		<div class=" justify-center w-full p-6 flex flex-col">
+			<div class="bg-gray-400  justify-center md:w-full w-full shadow-md p-5 h-auto rounded-lg blur-3 bg-opacity-50 flex flex-col col-span-12">
+				
+				 <h4 class="text-orange-300 text-center text-2xl pb-4" style="font-family: Abel;">À propos de moi 👋</h4>
+                 <div class="text-center items-center justify-center flex">
+                 <h4 class="w-48 border-t-4 border-solid border-red-500 h-5"></h4>
+                </div>
+				        <h2 class="text-gray-200 text-xl  mt-2 mb-5" >   
+                          Je suis un ingénieur tunisien en génie logiciel. Je suis pleine de passion et de créativité. Avec une
+                          forte attention aux techniques de développement Web et Mobile (plus de 2 ans d'expérience).
+                        </h2>
+                        <h2 class="text-gray-200 text-xl  mt-2 mb-5" >
+                          Pour l'instant, je travaille principalement sur le développement d'applications web côté Front-end en
+                          utilisant des techniques suivantes (angular, bootstrap, tailwind et javascript ... ).
+                        </h2>
+                        <h2 class="text-gray-200 text-xl  mt-2 mb-5" >
+                          Au cours de mon expérience dans ce domaine, j'ai travaillé sur des projets sous forme de missions
+                          freelance, avec plusieurs langages de programmation.
+                          telles que (Symfony, .net Core, Node js).
+                        </h2>
+                        <h2 class="text-gray-200 text-xl  mt-2 mb-5" >
+                          Je m'engage à fond dans la conception et le perfectionnement de mes compétences. Je suis extrêmement
+                          motivé, excité et toujours prêt à en apprendre davantage.
+                        </h2>
 			</div>
 		</div>
-		
-		<!--Container-->
-    <div class="card-anim" >
-		<div class="container px-4 md:px-0 max-w-6xl mx-auto">
-				
-				<!--Nav-->
-				<nav class="mt-0 w-full  zoom-anim">
-					<div class="container mx-auto flex items-center">
-						<div class="flex w-1/2 pl-4 text-sm ">
-							<ul class="list-reset flex justify-between flex-1 md:flex-none items-center">
-								<li class="mr-2">
-									<a class=" inline-block px-5 py-1 text-center text-gray-200 border-gray-500 bg-transparent border-2  border-solid rounded-tr-lg rounded-bl-lg cursor-pointer  hover:text-gray-300 hover:border-gray-600 focus:shadow-xs "
-										href="#Intro"><span>À propos</span></a>
-								</li>
-								<li class="mr-2">
-                  <a class=" inline-block px-5 py-1 text-center text-gray-200 border-gray-500 bg-transparent border-2  border-solid rounded-tr-lg rounded-bl-lg cursor-pointer  hover:text-gray-300 hover:border-gray-600 focus:shadow-xs "
-										href="#Competances"><span>Competances</a>
-								</li>
-								<li class="mr-2">
-									<a class=" inline-block px-5 py-1 text-center text-gray-200 border-gray-500 bg-transparent border-2  border-solid rounded-tr-lg rounded-bl-lg cursor-pointer  hover:text-gray-300 hover:border-gray-600 focus:shadow-xs "
-										href="#Experiences"><span>Experiances</span></a>
-								</li>
-                <li class="mr-2">
-									<a class=" inline-block px-5 py-1 text-center text-gray-200 border-gray-500 bg-transparent border-2  border-solid rounded-tr-lg rounded-bl-lg cursor-pointer  hover:text-gray-300 hover:border-gray-600 focus:shadow-xs "
-										href="#Education"><span>Education</span></a>
-								</li>
-								<li class="mr-2">
-									<a class=" inline-block px-5 py-1 text-center text-gray-200 border-gray-500 bg-transparent border-2  border-solid rounded-tr-lg rounded-bl-lg cursor-pointer  hover:text-gray-300 hover:border-gray-600 focus:shadow-xs "
-										href="#Contact"><span>Contact</span></a>
-								</li>
-							</ul>
-						</div>
-
-
-						<div class="flex w-1/2 justify-end content-center text-sm ">
-							<ul class="list-reset flex justify-between flex-1 md:flex-none items-center">
-							<li class="mr-2">
-							<a class="inline-block text-yellow-600 hover:text-yellow-700 no-underline hover:text-white hover:text-underline text-center h-10 p-2 md:h-auto md:p-4 avatar"
-								data-tippy-content="@Linkedin" onclick="redirectToLinkedin()">
-                <svg class="fill-current h-4 zoom-hover" xmlns="http://www.w3.org/2000/svg" data-name="Layer 1" viewBox="0 0 24 24" id="linkedin">
-                  <path d="M20.47,2H3.53A1.45,1.45,0,0,0,2.06,3.43V20.57A1.45,1.45,0,0,0,3.53,22H20.47a1.45,1.45,0,0,0,1.47-1.43V3.43A1.45,1.45,0,0,0,20.47,2ZM8.09,18.74h-3v-9h3ZM6.59,8.48h0a1.56,1.56,0,1,1,0-3.12,1.57,1.57,0,1,1,0,3.12ZM18.91,18.74h-3V13.91c0-1.21-.43-2-1.52-2A1.65,1.65,0,0,0,12.85,13a2,2,0,0,0-.1.73v5h-3s0-8.18,0-9h3V11A3,3,0,0,1,15.46,9.5c2,0,3.45,1.29,3.45,4.06Z"></path>
-                </svg>
-							</a>
-						    </li>
-							<li class="mr-2">
-							<a class="inline-block text-yellow-600 hover:text-yellow-700 no-underline hover:text-white hover:text-underline text-center h-10 p-2 md:h-auto md:p-4 avatar"
-								data-tippy-content="@facebook" onclick="redirectToFacebook()">
-                <span>
-								<svg class="fill-current h-4 zoom-hover" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
-									<path d="M19 6h5V0h-5c-3.86 0-7 3.14-7 7v3H8v6h4v16h6V16h5l1-6h-6V7c0-.542.458-1 1-1z"></path>
-								</svg>
-              </span>
-							</a>
-					    </li>
-
-							<li class="mr-2">
-              
-					    	<a onclick="redirectToCv()" 	class=" inline-block px-5 py-1 text-center text-yellow-600  bg-transparent border-2 border-yellow-600 border-solid rounded-tr-lg rounded-bl-lg cursor-pointer  hover:text-yellow-700 hover:border-yellow-700 focus:shadow-xs ">
-								<span >	Télecharger mon cv</span>
-								<span class=" inline-block">
-								<svg class="animate-bounce w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
-								</svg>
-							  </span>
-					     	</a>
-           
-						    </li>
-						</div>
-
-					</div>
-				</nav>
-
-				<div class="bg-gray-200 w-full text-xl md:text-2xl text-gray-800 leading-normal rounded-t">
-					
-			<!--Lead Card-->
-      <div class="flex h-full bg-white rounded overflow-hidden shadow-lg " id="Intro" >
-        <div class="w-full md:w-2/3">	
-       
-            <div class="px-8 flex items-center py-6 zoom-anim">
-            <div class="px-4">
-              <p class="text-xl font-bold text-gray-900">À propos de moi 👋</p>
-              <p class="text-sm mt-1 mr-0 mb-0 ml-0 font-semi-bold text-gray-700 mb-5">
-                Je suis un ingénieur tunisien en génie logiciel. Je suis pleine de passion et de créativité. Avec une forte attention aux techniques de développement Web et Mobile (plus de 2 ans d'expérience).                 
-              </p>
-              <p class="text-sm mt-1 mr-0 mb-0 ml-0 font-semi-bold text-gray-700 mb-5">
-                Pour l'instant, je travaille principalement sur le développement d'applications web côté Front-end en utilisant des techniques suivantes (angular, bootstrap, tailwind et javascript ... ).
-              </p>
-              <p class="text-sm mt-1 mr-0 mb-0 ml-0 font-semi-bold text-gray-700 mb-5">
-               Au cours de mon expérience dans ce domaine, j'ai travaillé sur des projets sous forme de missions freelance, avec plusieurs langages de programmation.
-               telles que (Symfony, .net Core, Node js).
-              </p>
-              <p class="text-sm mt-1 mr-0 mb-0 ml-0 font-semi-bold text-gray-700 mb-5">
-               Je m'engage à fond dans la conception et le perfectionnement de mes compétences. Je suis extrêmement motivé, excité et toujours prêt à en apprendre davantage.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="w-full md:w-1/3">
-          <div class="m-6  flex items-center text-center">
-            <div class="pr-4 py-6 ">
-              <div class="center">
-              <img class="w-64 h-64 rounded-full  avatar zoom-anim zoom-hover" data-tippy-content="Author Name" src="./img.png" alt="Avatar of Author">
-              </div>
-            </div>
-          </div>
-        </div>
+	</div>
+     <!--Posts Container-->
+     <div class="flex flex-wrap justify-between pt-8 -mx-6">
+        <!--2/3 col -->
+    <div class=" w-full md:w-full p-6 flex flex-col flex-grow flex-shrink">
+<div class="bg-white rounded-t rounded-b-none overflow-hidden shadow-lg px-2 py-4 " id="Experiences">
+<section class="text-gray-600 body-font overflow-hidden">
+<div class="container px-4 py-8 mx-auto">
+<div class="-my-8 divide-y-2 divide-gray-100">
+  <div class="py-8 flex flex-wrap md:flex-nowrap">
+    <div class="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
+      <p class="text-xl font-bold text-gray-900"">ADDINN Group – Développeur Frontend </span>
+        <p class=" mt-1 text-blue-600 text-lg">Du: 15/02/2021 Jusqu'à: 30/02/2023</p>
     </div>
-    <!--/Lead Card-->
-    
-				
-				<!--Posts Container-->
-				<div class="flex flex-wrap justify-between pt-8 -mx-6" ">
-        				<!--2/3 col -->
-					<div class="w-full md:w-full p-6 flex flex-col flex-grow flex-shrink" id="Competances">
-						<div class="flex-1 bg-white rounded-t rounded-b-none overflow-hidden shadow-lg px-8 py-2">
-              <section class="text-gray-600 body-font overflow-hidden">
-                <div class="container px-5 py-8 mx-auto">
-                  <div class="-my-8 divide-y-2 divide-gray-100">
-                    <div class="py-8 flex flex-wrap md:flex-nowrap">
-                      <div class="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
-                        <span class="text-xl font-bold text-gray-900"">ADDINN Group – Développeur Front end </span>
-                        <span class="mt-1 text-purple-600 text-sm">Du: 15/02/2021 Jusqu'à: 30/02/2023</span>
-                      </div>
-                      <div class="md:flex-grow bg-gray-200 rounded-lg p-4">
-                        <p class="text-xl font-bold text-gray-900">Sommaire des activités réalisées en rapport avec les services :</p>
-                        
-                        <p class="text-sm mt-1 mr-0 mb-0 ml-0 font-semi-bold text-gray-700 mb-2"> - Intégration des interfaces design.</p>
-                        <p class="text-sm mt-1 mr-0 mb-0 ml-0 font-semi-bold text-gray-700 mb-2">- Intégration des interfaces avec ADF (Alfresco Development Framework).</p>
-                          <p class="text-sm mt-1 mr-0 mb-0 ml-0 font-semi-bold text-gray-700 mb-2"> - Analyse et évaluation des besoins clients</p>
-                            <p class="text-sm mt-1 mr-0 mb-0 ml-0 font-semi-bold text-gray-700 mb-2">- Travailler en étroite collaboration avec : les designers, chef de projet/ product owner et le scrum master.</p>
-                              <p class="text-sm mt-1 mr-0 mb-0 ml-0 font-semi-bold text-gray-700 mb-2">- Utilisation des frameworks : Javascript et Angular.</p>
-                                <p class="text-sm mt-1 mr-0 mb-0 ml-0 font-semi-bold text-gray-700 mb-2">- Travail avec les autres équipes de développement.</p>
-                                  <p class="text-sm mt-1 mr-0 mb-0 ml-0 font-semi-bold text-gray-700 mb-2">- Garantir une bonne ergonomie et une navigation optimale des plateformes/applications.</p>
-                                    <p class="text-sm mt-1 mr-0 mb-0 ml-0 font-semi-bold text-gray-700 mb-2">- Contribuer aux corrections nécessaires aux dernières évolutions technologiques.</p>
-                                      <p class="text-sm mt-1 mr-0 mb-0 ml-0 font-semi-bold text-gray-700 mb-2">- S’assurer du respect des normes et standards appliqués.</p>
+    <div class="md:flex-grow bg-gray-200 rounded-lg p-4">
+      <p class="text-xl font-bold text-gray-900">Sommaire des activités réalisées en rapport avec les
+        services :</p>
 
-                        
-                                      <div class="flex-none mt-auto  overflow-hidden p-4">
-                                        <div class="flex items-center justify-between">
-                                          <div class="flex h-12 w-12 items-center text-black">
-                                            <span class="tag w-full text-center text-xl font-medium text-gray-700 group-hover:text-green-900 rounded-full mt-2">
-                                              <img src="./experiences/add-inn.jpg" class="mx-auto h-12 w-24 rounded-lg mt-2 zoom-hover icon-anim" >
-                                            </span>
-                                          </div>
-                                         
-                                            <button class="text-indigo-500 inline-flex items-center mt-2 text-sm" type="submit" onclick="redirectToAddinn()" >Voir plus
-                                              <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                                <path d="M5 12h14"></path>
-                                                <path d="M12 5l7 7-7 7"></path>
-                                              </svg>
-                                            </button>
-                                     
-                                        </div>
-                                      </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </section>
-              <hr>
-              <section class="text-gray-600 body-font overflow-hidden">
-                <div class="container px-5 py-8 mx-auto">
-                  <div class="-my-8 divide-y-2 divide-gray-100">
-                    <div class="py-8 flex flex-wrap md:flex-nowrap">
-                      <div class="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
-                        <span class="text-xl font-bold text-gray-900""> ITQAN –</span>
-                          <span class="text-xl font-bold text-gray-900""> Développeur web</span>
-                        <span class="mt-1 text-purple-600 text-sm">Du: 15/02/2021 Jusqu'à: 30/02/2023</span>
-                      </div>
-                      <div class="md:flex-grow  bg-gray-200 rounded-lg p-4">
-                        <p class="text-xl font-bold text-gray-900">Sommaire des activités réalisées en rapport avec les services :</p>
-                        <p class="text-sm mt-1 mr-0 mb-0 ml-0 font-semi-bold text-gray-700 mb-2">  - Utilisation de différentes Technologies et outils : Mongo DB /Node.js/Angular9</p>
-                          <p class="text-sm mt-1 mr-0 mb-0 ml-0 font-semi-bold text-gray-700 mb-2"> - Identifier, comprendre et analyser les besoins spécifiques des clients</p>
-                            <p class="text-sm mt-1 mr-0 mb-0 ml-0 font-semi-bold text-gray-700 mb-2"> - Concevoir et développer des sites web/modules spécifiques</p>
-                              <p class="text-sm mt-1 mr-0 mb-0 ml-0 font-semi-bold text-gray-700 mb-2"> - Elaborer plusieurs tests de vérification</p>
-                                <p class="text-sm mt-1 mr-0 mb-0 ml-0 font-semi-bold text-gray-700 mb-2"> - Corriger des bugs </p>
-                                  <p class="text-sm mt-1 mr-0 mb-0 ml-0 font-semi-bold text-gray-700 mb-2"> - Concevoir des prototypes et interfaces web.</p>
-                      
-                        
-                                  <div class="flex-none mt-auto  overflow-hidden  p-4">
-                                    <div class="flex items-center justify-between">
-                                      <div class="flex h-12 w-12 items-center text-black">
-                                        <span class="tag w-full text-center text-xl font-medium text-gray-700 group-hover:text-green-900 rounded-full mt-2">
-                                          <img src="./experiences/itqan.png" class="mx-auto h-12 w-24 rounded-lg mt-2 zoom-hover icon-anim" >
-                                        </span>
-                                      </div>
-                                  
-                                        <button class="text-indigo-500 inline-flex items-center mt-2 text-sm" type="submit" onclick="redirectToItqan()">Voir plus
-                                          <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                            <path d="M5 12h14"></path>
-                                            <path d="M12 5l7 7-7 7"></path>
-                                          </svg>
-                                        </button>
-                                    
-                                    </div>
-                                  </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </section>
-              <hr>
-              <section class="text-gray-600 body-font overflow-hidden">
-                <div class="container px-5 py-8 mx-auto">
-                  <div class="-my-8 divide-y-2 divide-gray-100">
-                    <div class="py-8 flex flex-wrap md:flex-nowrap">
-                      <div class="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
-                        <span class="text-xl font-bold text-gray-900"">M-GNIC Tunisie </span>
-                        <span class="mt-1 text-purple-600 text-sm">Du: 15/02/2021 Jusqu'à: 30/02/2023</span>
-                      </div>
-                      <div class="md:flex-grow  bg-gray-200 rounded-lg p-4">
-                        <p class="text-xl font-bold text-gray-900">Sommaire des activités réalisées en rapport avec les services :</p>
-                     
-                        <p class="text-sm mt-1 mr-0 mb-0 ml-0 font-semi-bold text-gray-700 mb-2">- Installation, intégration, mise en service et maintenance différents types BTS et Microwave</p>
-                          <p class="text-sm mt-1 mr-0 mb-0 ml-0 font-semi-bold text-gray-700 mb-2">- Technologies utilisées: Huawei/Ericsson/Alcatel/ MPR/ZTE.</p>
-                            <p class="text-sm mt-1 mr-0 mb-0 ml-0 font-semi-bold text-gray-700 mb-2">- Préparation du rapports (site surveille) et test de visibilité (pathloss).</p>
-                      
-                        <div class="flex-none mt-auto  overflow-hidden  p-4">
-                          <div class="flex items-center justify-between">
-                            <div class="flex h-12 w-12 items-center text-black">
-                              <span class="tag w-full text-center text-xl font-medium text-gray-700 group-hover:text-green-900 rounded-full mt-2">
-                                <img src="./experiences/m-gnic.png" class="mx-auto h-12 w-24 rounded-lg mt-2 zoom-hover icon-anim" >
-                              </span>
-                            </div>
-                            <button class="text-indigo-500 inline-flex items-center mt-2 text-sm" onclick="redirectToMgnic()">Voir plus
-                              <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                <path d="M5 12h14"></path>
-                                <path d="M12 5l7 7-7 7"></path>
-                              </svg>
-                            </button>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </section>
-						</div>
-					</div>
+      <p class="text-sm mt-1 mr-0 mb-0 ml-0 font-semi-bold text-gray-700 mb-2"> - Intégration des
+        interfaces design.</p>
+      <p class="text-sm mt-1 mr-0 mb-0 ml-0 font-semi-bold text-gray-700 mb-2">- Intégration des
+        interfaces avec ADF (Alfresco Development Framework).</p>
+      <p class="text-sm mt-1 mr-0 mb-0 ml-0 font-semi-bold text-gray-700 mb-2"> - Analyse et évaluation
+        des besoins clients</p>
+      <p class="text-sm mt-1 mr-0 mb-0 ml-0 font-semi-bold text-gray-700 mb-2">- Travailler en étroite
+        collaboration avec : les designers, chef de projet/ product owner et le scrum master.</p>
+      <p class="text-sm mt-1 mr-0 mb-0 ml-0 font-semi-bold text-gray-700 mb-2">- Utilisation des
+        frameworks : Javascript et Angular.</p>
+      <p class="text-sm mt-1 mr-0 mb-0 ml-0 font-semi-bold text-gray-700 mb-2">- Travail avec les autres
+        équipes de développement.</p>
+      <p class="text-sm mt-1 mr-0 mb-0 ml-0 font-semi-bold text-gray-700 mb-2">- Garantir une bonne
+        ergonomie et une navigation optimale des plateformes/applications.</p>
+      <p class="text-sm mt-1 mr-0 mb-0 ml-0 font-semi-bold text-gray-700 mb-2">- Contribuer aux
+        corrections nécessaires aux dernières évolutions technologiques.</p>
+      <p class="text-sm mt-1 mr-0 mb-0 ml-0 font-semi-bold text-gray-700 mb-2">- S’assurer du respect
+        des normes et standards appliqués.</p>
 
-					<!--1/3 col -->
-					<!-- <div class="w-full md:w-1/3 p-6 flex flex-col flex-grow flex-shrink">
-						<div class="flex-1 bg-white rounded-t rounded-b-none overflow-hidden shadow-lg">
-							<a href="#" class="flex flex-wrap no-underline hover:no-underline">
-								<img src="https://source.unsplash.com/collection/1118905/800x600" class="h-full w-full rounded-t pb-6">
-								<p class="w-full text-gray-600 text-xs md:text-sm px-6">GETTING STARTED</p>
-								<div class="w-full font-bold text-xl text-gray-900 px-6">Lorem ipsum dolor sit amet.</div>
-								<p class="text-gray-800 font-serif text-base px-6 mb-5">
-									Lorem ipsum eu nunc commodo posuere et sit amet ligula. 
-								</p>
-							</a>
-						</div>
-						<div class="flex-none mt-auto bg-white rounded-b rounded-t-none overflow-hidden shadow-lg p-6">
-							<div class="flex items-center justify-between">
-								<img class="w-8 h-8 rounded-full mr-4 avatar roatate-anim" data-tippy-content="Author Name" src="http://i.pravatar.cc/300" alt="Avatar of Author">
-								<p class="text-gray-600 text-xs md:text-sm">1 MIN READ</p>
-							</div>
-						</div>
-					</div> -->
-				
-					<!--1/2 col -->
-					<div class="w-full md:w-1/2 p-6 flex flex-col flex-grow flex-shrink" >
-						<div class="flex-1 bg-white rounded-t rounded-b-none overflow-hidden shadow-lg" id="Experiences">
-              <div class="mr-6 ml-6  items-center py-6 ">
-                <p class="text-xl font-bold text-gray-900">Mes Experiences</p>
-                <p class="text-xl font-medium text-gray-900">Développement et intégration des interfaces avec Angular 13 (Angular Framework).</p> 
-                <div class="bg-gray-200 rounded-lg p-4 mt-2">  
-                  <div class="bg-transparent border border-gray-500 hover:border-green-500 text-xs text-gray-500 hover:text-green-500 font-bold py-2 px-4 rounded-full text-center"><p>Projet 1 : Solution Poc Réclamation</p></div>
-                  <p class="text-sm mt-1 mr-0 mb-0 ml-0 font-semi-bold text-gray-700 mb-5">Conception et développement d'une application web relative aux Réclamations Bancaires, consiste à digitaliser les procédures de gestion et de suivi des réclamations(STB). </p> 
-                  <p class="text-sm mt-1 mr-0 mb-0 ml-0 font-semi-bold text-gray-700 mb-5"><span class="font-medium">Technologie utilisé :</span> ASP.Net Core / Angular13</p> 
-                </div>
-                <div class="bg-gray-200 rounded-lg p-4 mt-2">  
-                  <div class="bg-transparent border border-gray-500 hover:border-green-500 text-xs text-gray-500 hover:text-green-500 font-bold py-2 px-4 rounded-full text-center"><p>Projet 2 : Solution FTUSA</p></div>
-                  <p class="text-sm mt-1 mr-0 mb-0 ml-0 font-semi-bold text-gray-700 mb-5">Conception et développement d'une application web relative à l'Assurance, consiste à digitaliser les procédures de gestion et de suivi des dossiers </p>                                                                           
-                  <p class="text-sm mt-1 mr-0 mb-0 ml-0 font-semi-bold text-gray-700 mb-5"><span class="font-medium">Technologies utilisées : </span> ASP.Net Core / Angular13</p> 
-                </div>
-                <div class="bg-gray-200 rounded-lg p-4 mt-2">  
-                  <div class="bg-transparent border border-gray-500 hover:border-green-500 text-xs text-gray-500 hover:text-green-500 font-bold py-2 px-4 rounded-full text-center"><p>Projet 3 : Smart Claim</p></div>
-                  <p class="text-sm mt-1 mr-0 mb-0 ml-0 font-semi-bold text-gray-700 mb-5">Conception et développement d'une application web relative à l'Assurance, consiste à digitaliser les procédures de gestion et de suivi des sinistres . </p>                                                            
-                  <p class="text-sm mt-1 mr-0 mb-0 ml-0 font-semi-bold text-gray-700 mb-5"><span class="font-medium">Technologies utilisées :</span> PostgreSQL/ Node.js / Angular13</p> 
-                </div>
-              </div>
-						</div>
-					</div>
 
-					<!--1/2 col -->
-					<div class="w-full md:w-1/2 p-6 flex flex-col flex-grow flex-shrink">
-						<div class="flex-none bg-white rounded-b rounded-lg overflow-hidden shadow-lg px-6 pb-8">
-              <div class="slide-container rounded py-8">
-                <span id="slider1"></span>
-                <span id="slider2"></span>
-                <span id="slider3"></span>
-                <span id="slider4"></span>
-                <span id="slider5"></span>
-                <span id="slider6"></span>
-                <span id="slider7"></span>
-                <span id="slider8"></span>
-                <div class="image-container">
-                  <img src="./smart/Capture 1.PNG" alt="" class="slider-image ">
-                  <img src="./smart/Capture 11.PNG" alt="" class="slider-image ">
-                  <img src="./smart/Capture 7.PNG" alt="" class="slider-image ">
-                  <img src="./smart/Capture 4.PNG" alt="" class="slider-image ">
-                  <img src="./smart/Capture 5.PNG" alt="" class="slider-image ">
-                  <img src="./rec/1.png" alt="" class="slider-image ">
-                  <img src="./rec/4.png" alt="" class="slider-image ">
-                  <img src="./rec/3.png" alt="" class="slider-image ">
-                </div>
-                <div class="button-container">
-                  <a href="#slider1" class="slider-button"></a>
-                  <a href="#slider2" class="slider-button"></a>
-                  <a href="#slider3" class="slider-button"></a>
-                  <a href="#slider4" class="slider-button"></a>
-                  <a href="#slider5" class="slider-button"></a>
-                </div>
-              </div>
-              <p class="text-xl font-medium text-gray-900 mt-8">Développement et intégration des interfaces avec ADF (Alfresco Framework).</p> 
-              <div class="bg-gray-200 rounded-lg p-4 mt-2"> 
-                <div class="bg-transparent border border-gray-500 hover:border-green-500 text-xs text-gray-500 hover:text-green-500 font-bold py-2 px-4 rounded-full text-center"><p>Projet 4 :Solution Digi Recouvrement/ GED </p></div>
-                <p class="text-sm mt-1 mr-0 mb-0 ml-0 font-semi-bold text-gray-700 mb-5">Une application web pour la gestion des Recouvrements Bancaires en digitalisant les procédures de gestion et de suivi des recouvrements.</p> 
-                <p class="text-sm mt-1 mr-0 mb-0 ml-0 font-semi-bold text-gray-700 mb-5"><span class="font-medium">Technologies utilisées :</span> ADF-Alfresco / Share- Alfresco.</p>  
-              </div>
-						</div>
-					</div>
+      <div class="flex-none mt-auto  overflow-hidden p-4">
+        <div class="flex items-center justify-between">
+          <div class="flex h-12 w-12 items-center text-black">
+            <span
+              class="tag w-full text-center text-xl font-medium text-gray-700 group-hover:text-green-900 rounded-full mt-2">
+              <img src="./experiences/add-inn.jpg"
+                class="mx-auto h-12 w-24 rounded-lg mt-2 zoom-hover icon-anim">
+            </span>
+          </div>
 
-        </div>
-        <!--/ Post Content-->
-<div class="flex flex-wrap justify-between pt-8 -mx-6 p-6" >
-  <!--FULL col -->
-<div class="w-full md:w-full p-6 flex flex-col flex-grow flex-shrink bg-white rounded shadow-lg" id="Competances">
-  <div class="text-center pb-4"><p class="text-xl font-bold text-gray-900">Mes competances</p></div>
+          <button class="text-indigo-500 inline-flex items-center mt-2 text-sm" type="submit"
+            onclick="redirectToAddinn()">Voir plus
+            <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"
+              fill="none" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M5 12h14"></path>
+              <path d="M12 5l7 7-7 7"></path>
+            </svg>
+          </button>
 
-  <div class="containe">
-    <div class="brand-wheel">
-      <div class="brand-slide">
-        <div class="logo-div">
-          <img alt="#" src="./competances/AngularJS.png" class="w-24">
-        </div>
-        <div class="logo-div">
-          <img alt="#" src="./competances/Node.js.png" class="w-24">
-        </div>
-        <div class="logo-div">
-          <img alt="#" src="./competances/HTML5.png"  class="w-24">
-        </div>
-        <div class="logo-div">
-          <img alt="#" src="./competances/CSS3.png" class="w-24">
-        </div>
-        <div class="logo-div">
-          <img alt="#" src="./competances/Tailwind CSS.png" class="w-24">
-        </div>
-        <div class="logo-div">
-          <img alt="#" src="./competances/Sass.png" class="w-24">
-        </div>
-        <div class="logo-div">
-          <img alt="#" src="./competances/React.png" class="w-24">
-        </div>
-        <div class="logo-div">
-          <img alt="#" src="./competances/Symfony.png" class="w-24">
-        </div>
-        <div class="logo-div">
-          <img alt="#" src="./competances/NET core.png" class="w-24">
-        </div>
-      </div>
-      <div class="brand-slide delay">
-        <div class="logo-div">
-          <img alt="#" src="./competances/Postman.png" class="w-24">
-        </div>
-        <div class="logo-div">
-          <img alt="#" src="./competances/MongoDB.png" class="w-24">
-        </div>
-        <div class="logo-div">
-          <img alt="#" src="./competances/PostgresSQL.png" class="w-24">
-        </div>
-        <div class="logo-div">
-          <img alt="#" src="./competances/Firebase.png" class="w-24">
-        </div>
-        <div class="logo-div">
-          <img alt="#" src="./competances/Ubuntu.png" class="w-24">
-        </div>
-        <div class="logo-div">
-          <img alt="#" src="./competances/Jenkins.png" class="w-24">
-        </div>
-        <div class="logo-div">
-          <img alt="#" src="./competances/Git.png" class="w-24">
-        </div>
-        <div class="logo-div">
-          <img alt="#" src="./competances/GitLab.png" class="w-24">
-        </div>
-        <div class="logo-div">
-          <img alt="#" src="./competances/Jira.png" class="w-24">
-        </div>
-        <div class="logo-div">
-          <img alt="#" src="./competances/AWS.png" class="w-24">
-        </div>
-        <div class="logo-div">
-          <img alt="#" src="./competances/Unified Modelling Language (UML).png" class="w-24">
         </div>
       </div>
     </div>
   </div>
+</div>
+</div>
+</section>
+<hr>
+<section class="text-gray-600 body-font overflow-hidden">
+<div class="container px-4 py-8 mx-auto">
+<div class="-my-8 divide-y-2 divide-gray-100">
+  <div class="py-8 flex flex-wrap md:flex-nowrap">
+    <div class="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
+      <p class="text-xl font-bold text-gray-900""> ITQAN Tunisie – Développeur web</p>
+        <p class=" mt-1 text-blue-600 text-lg">Du: 15/02/2020 Jusqu'à: 15/08/2020</p>
+    </div>
+    <div class="md:flex-grow  bg-gray-200 rounded-lg p-4">
+      <p class="text-xl font-bold text-gray-900">Sommaire des activités réalisées en rapport avec les
+        services :</p>
+      <p class="text-sm mt-1 mr-0 mb-0 ml-0 font-semi-bold text-gray-700 mb-2"> - Utilisation de
+        différentes Technologies et outils : Mongo DB /Node.js/Angular9</p>
+      <p class="text-sm mt-1 mr-0 mb-0 ml-0 font-semi-bold text-gray-700 mb-2"> - Identifier, comprendre
+        et analyser les besoins spécifiques des clients</p>
+      <p class="text-sm mt-1 mr-0 mb-0 ml-0 font-semi-bold text-gray-700 mb-2"> - Concevoir et
+        développer des sites web/modules spécifiques</p>
+      <p class="text-sm mt-1 mr-0 mb-0 ml-0 font-semi-bold text-gray-700 mb-2"> - Elaborer plusieurs
+        tests de vérification</p>
+      <p class="text-sm mt-1 mr-0 mb-0 ml-0 font-semi-bold text-gray-700 mb-2"> - Corriger des bugs </p>
+      <p class="text-sm mt-1 mr-0 mb-0 ml-0 font-semi-bold text-gray-700 mb-2"> - Concevoir des
+        prototypes et interfaces web.</p>
+
+
+      <div class="flex-none mt-auto  overflow-hidden  p-4">
+        <div class="flex items-center justify-between">
+          <div class="flex h-12 w-12 items-center text-black">
+            <span
+              class="tag w-full text-center text-xl font-medium text-gray-700 group-hover:text-green-900 rounded-full mt-2">
+              <img src="./experiences/itqan.png"
+                class="mx-auto h-12 w-24 rounded-lg mt-2 zoom-hover icon-anim">
+            </span>
+          </div>
+
+          <button class="text-indigo-500 inline-flex items-center mt-2 text-sm" type="submit"
+            onclick="redirectToItqan()">Voir plus
+            <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"
+              fill="none" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M5 12h14"></path>
+              <path d="M12 5l7 7-7 7"></path>
+            </svg>
+          </button>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</section>
+<hr>
+<section class="text-gray-600 body-font overflow-hidden">
+<div class="container px-4 py-8 mx-auto">
+<div class="-my-8 divide-y-2 divide-gray-100">
+  <div class="py-8 flex flex-wrap md:flex-nowrap">
+    <div class="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
+      <p class="text-xl font-bold text-gray-900"">M-GNIC Tunisie - Superviseur Telecom</p>
+        <p class=" mt-1 text-blue-600 text-lg">Du: 11/07/2013 Jusqu'à: 30/06/2018</p>
+    </div>
+    <div class="md:flex-grow  bg-gray-200 rounded-lg p-4">
+      <p class="text-xl font-bold text-gray-900">Sommaire des activités réalisées en rapport avec les
+        services :</p>
+
+      <p class="text-sm mt-1 mr-0 mb-0 ml-0 font-semi-bold text-gray-700 mb-2">- Installation,
+        intégration, mise en service et maintenance différents types BTS et Microwave</p>
+      <p class="text-sm mt-1 mr-0 mb-0 ml-0 font-semi-bold text-gray-700 mb-2">- Technologies utilisées:
+        Huawei/Ericsson/Alcatel/ MPR/ZTE.</p>
+      <p class="text-sm mt-1 mr-0 mb-0 ml-0 font-semi-bold text-gray-700 mb-2">- Préparation du rapports
+        (site surveille) et test de visibilité (pathloss).</p>
+
+      <div class="flex-none mt-auto  overflow-hidden  p-4">
+        <div class="flex items-center justify-between">
+          <div class="flex h-12 w-12 items-center text-black">
+            <span
+              class="tag w-full text-center text-xl font-medium text-gray-700 group-hover:text-green-900 rounded-full mt-2">
+              <img src="./experiences/m-gnic.png"
+                class="mx-auto h-12 w-24 rounded-lg mt-2 zoom-hover icon-anim">
+            </span>
+          </div>
+          <button class="text-indigo-500 inline-flex items-center mt-2 text-sm"
+            onclick="redirectToMgnic()">Voir plus
+            <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"
+              fill="none" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M5 12h14"></path>
+              <path d="M12 5l7 7-7 7"></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</section>
+</div>
+</div>
+
+<!--1/2 col -->
+<div class="w-full md:w-1/2 p-6 flex flex-col flex-grow flex-shrink">
+<div class="flex-1 bg-white rounded-t rounded-b-none overflow-hidden shadow-lg">
+<div class="mr-6 ml-6  items-center py-6 ">
+<p class="text-xl font-bold text-gray-900">Mes Experiences</p>
+<p class="text-xl font-medium text-gray-900">Développement et intégration des interfaces avec Angular 13
+(Angular Framework).</p>
+<div class="bg-gray-200 rounded-lg p-4 mt-2">
+<div
+  class="bg-transparent border border-gray-500 hover:border-green-500 text-xs text-gray-500 hover:text-green-500 font-bold py-2 px-4 rounded-full text-center">
+  <p>Projet 1 : Solution Poc Réclamation</p>
+</div>
+<p class="text-sm mt-1 mr-0 mb-0 ml-0 font-semi-bold text-gray-700 mb-5">Conception et développement
+  d'une application web relative aux Réclamations Bancaires, consiste à digitaliser les procédures de
+  gestion et de suivi des réclamations(STB). </p>
+<p class="text-sm mt-1 mr-0 mb-0 ml-0 font-semi-bold text-gray-700 mb-5"><span
+    class="font-medium">Technologie utilisé :</span> ASP.Net Core / Angular13</p>
+</div>
+<div class="bg-gray-200 rounded-lg p-4 mt-2">
+<div
+  class="bg-transparent border border-gray-500 hover:border-green-500 text-xs text-gray-500 hover:text-green-500 font-bold py-2 px-4 rounded-full text-center">
+  <p>Projet 2 : Solution FTUSA</p>
+</div>
+<p class="text-sm mt-1 mr-0 mb-0 ml-0 font-semi-bold text-gray-700 mb-5">Conception et développement
+  d'une application web relative à l'Assurance, consiste à digitaliser les procédures de gestion et de
+  suivi des dossiers </p>
+<p class="text-sm mt-1 mr-0 mb-0 ml-0 font-semi-bold text-gray-700 mb-5"><span
+    class="font-medium">Technologies utilisées : </span> ASP.Net Core / Angular13</p>
+</div>
+<div class="bg-gray-200 rounded-lg p-4 mt-2">
+<div
+  class="bg-transparent border border-gray-500 hover:border-green-500 text-xs text-gray-500 hover:text-green-500 font-bold py-2 px-4 rounded-full text-center">
+  <p>Projet 3 : Smart Claim</p>
+</div>
+<p class="text-sm mt-1 mr-0 mb-0 ml-0 font-semi-bold text-gray-700 mb-5">Conception et développement
+  d'une application web relative à l'Assurance, consiste à digitaliser les procédures de gestion et de
+  suivi des sinistres . </p>
+<p class="text-sm mt-1 mr-0 mb-0 ml-0 font-semi-bold text-gray-700 mb-5"><span
+    class="font-medium">Technologies utilisées :</span> PostgreSQL/ Node.js / Angular13</p>
+</div>
+</div>
+</div>
+</div>
+
+<!--1/2 col -->
+<div class="w-full md:w-1/2 p-6 flex flex-col flex-grow flex-shrink" >
+<div class="flex-none bg-white rounded-b rounded-lg overflow-hidden shadow-lg px-6 pb-8">
+<div class="slide-container rounded py-8">
+<span id="slider1"></span>
+<span id="slider2"></span>
+<span id="slider3"></span>
+<span id="slider4"></span>
+<span id="slider5"></span>
+<span id="slider6"></span>
+<span id="slider7"></span>
+<span id="slider8"></span>
+<div class="image-container">
+<img src="./smart/Capture 1.PNG" alt="" class="slider-image ">
+<img src="./smart/Capture 11.PNG" alt="" class="slider-image ">
+<img src="./smart/Capture 7.PNG" alt="" class="slider-image ">
+<img src="./smart/Capture 4.PNG" alt="" class="slider-image ">
+<img src="./smart/Capture 5.PNG" alt="" class="slider-image ">
+<img src="./rec/1.png" alt="" class="slider-image ">
+<img src="./rec/4.png" alt="" class="slider-image ">
+<img src="./rec/3.png" alt="" class="slider-image ">
+</div>
+<div class="button-container">
+<a href="#slider1" class="slider-button"></a>
+<a href="#slider2" class="slider-button"></a>
+<a href="#slider3" class="slider-button"></a>
+<a href="#slider4" class="slider-button"></a>
+<a href="#slider5" class="slider-button"></a>
+</div>
+</div>
+<p class="text-xl font-medium text-gray-900 mt-8">Développement et intégration des interfaces avec ADF
+(Alfresco Framework).</p>
+<div class="bg-gray-200 rounded-lg p-4 mt-2">
+<div
+class="bg-transparent border border-gray-500 hover:border-green-500 text-xs text-gray-500 hover:text-green-500 font-bold py-2 px-4 rounded-full text-center">
+<p>Projet 4 :Solution Digi Recouvrement/ GED </p>
+</div>
+<p class="text-sm mt-1 mr-0 mb-0 ml-0 font-semi-bold text-gray-700 mb-5">Une application web pour la
+gestion des Recouvrements Bancaires en digitalisant les procédures de gestion et de suivi des
+recouvrements.</p>
+<p class="text-sm mt-1 mr-0 mb-0 ml-0 font-semi-bold text-gray-700 mb-5"><span
+  class="font-medium">Technologies utilisées :</span> ADF-Alfresco / Share- Alfresco.</p>
+</div>
+</div>
+</div>
+
+</div>
+<!--/ Post Content-->
+<div class="flex flex-wrap justify-between pt-8 -mx-6 p-6">
+<!--FULL col -->
+<div class="w-full md:w-full p-6 flex flex-col flex-grow flex-shrink bg-white rounded shadow-lg"  id="Competances">
+<div class="text-center pb-4 bg-white">
+<p class="text-xl font-bold text-gray-900">Mes competances</p>
+</div>
+
+<div class="containe bg-white">
+<div class="brand-wheel">
+<div class="brand-slide">
+<div class="logo-div">
+  <img alt="#" src="./competances/AngularJS.png" class="w-24">
+</div>
+<div class="logo-div">
+  <img alt="#" src="./competances/Node.js.png" class="w-24">
+</div>
+<div class="logo-div">
+  <img alt="#" src="./competances/HTML5.png" class="w-24">
+</div>
+<div class="logo-div">
+  <img alt="#" src="./competances/CSS3.png" class="w-24">
+</div>
+<div class="logo-div">
+  <img alt="#" src="./competances/Tailwind CSS.png" class="w-24">
+</div>
+<div class="logo-div">
+  <img alt="#" src="./competances/Sass.png" class="w-24">
+</div>
+<div class="logo-div">
+  <img alt="#" src="./competances/React.png" class="w-24">
+</div>
+<div class="logo-div">
+  <img alt="#" src="./competances/Symfony.png" class="w-24">
+</div>
+<div class="logo-div">
+  <img alt="#" src="./competances/NET core.png" class="w-24">
+</div>
+</div>
+<div class="brand-slide delay">
+<div class="logo-div">
+  <img alt="#" src="./competances/Postman.png" class="w-24">
+</div>
+<div class="logo-div">
+  <img alt="#" src="./competances/MongoDB.png" class="w-24">
+</div>
+<div class="logo-div">
+  <img alt="#" src="./competances/PostgresSQL.png" class="w-24">
+</div>
+<div class="logo-div">
+  <img alt="#" src="./competances/Firebase.png" class="w-24">
+</div>
+<div class="logo-div">
+  <img alt="#" src="./competances/Ubuntu.png" class="w-24">
+</div>
+<div class="logo-div">
+  <img alt="#" src="./competances/Jenkins.png" class="w-24">
+</div>
+<div class="logo-div">
+  <img alt="#" src="./competances/Git.png" class="w-24">
+</div>
+<div class="logo-div">
+  <img alt="#" src="./competances/GitLab.png" class="w-24">
+</div>
+<div class="logo-div">
+  <img alt="#" src="./competances/Jira.png" class="w-24">
+</div>
+<div class="logo-div">
+  <img alt="#" src="./competances/AWS.png" class="w-24">
+</div>
+<div class="logo-div">
+  <img alt="#" src="./competances/Unified Modelling Language (UML).png" class="w-24">
+</div>
+</div>
+</div>
+</div>
 
 </div>
 </div>
 <div class="flex flex-wrap justify-between pt-4 -mx-6" ">
-  <!--1/1 col -->
-<div class="w-full md:w-full p-6 flex flex-col flex-grow flex-shrink" >
+<!--1/1 col -->
+<div class=" w-full md:w-full p-6 flex flex-col flex-grow flex-shrink">
 <div class="flex-1 bg-white rounded-t rounded-b-none overflow-hidden shadow-lg" id="Education">
 <div class="mr-6 ml-6  items-center py-6 ">
-<p class="text-xl font-bold text-gray-900">Education </p>
+<p class="text-xl font-bold text-gray-900 space">Mes Diplômes</p>
 
-<div class="bg-gray-200 rounded-lg pt-4 pb-1 px-4 mt-2">  
+<div class="bg-gray-200 rounded-lg pt-4 pb-1 px-4 mt-2">
 <p class="text-xl font-bold">
 Diplôme National D’ingénieur en Génie Logiciel Du: 2018/2019 Jusqu'à: 2020/2021.
 </p>
@@ -444,15 +447,16 @@ Ecole privée d'ingénieur TEK-UP, Tunis.
 </p>
 </div>
 
-<div class="bg-gray-200 rounded-lg pt-4 pb-1 px-4 mt-2">  
-<p class="text-xl font-bold">Diplôme Technicien Supérieur en Réseaux et Télécommunications Du: 2008/2009 Jusqu'à: 2011/2012.</p>
+<div class="bg-gray-200 rounded-lg pt-4 pb-1 px-4 mt-2">
+<p class="text-xl font-bold">Diplôme Technicien Supérieur en Réseaux et Télécommunications Du: 2008/2009
+Jusqu'à: 2011/2012.</p>
 <p class="text-sm mt-1 mr-0 mb-0 ml-0 font-semi-bold text-gray-700 mb-5">
 Institut supérieur des sciences appliquées et technologiées, Mahdia
 </p>
 </div>
 
-<div class="bg-gray-200 rounded-lg pt-4 pb-1 px-4 mt-2">  
-<p class="text-xl font-bold">Baccalauréat  Du: 1995/1996 Jusqu'à: 2008/2009.</p>
+<div class="bg-gray-200 rounded-lg pt-4 pb-1 px-4 mt-2">
+<p class="text-xl font-bold">Baccalauréat Du: 1995/1996 Jusqu'à: 2008/2009.</p>
 <p class="text-sm mt-1 mr-0 mb-0 ml-0 font-semi-bold text-gray-700 mb-5">
 Baccalauréat Informatique au Lycée al emtyez ,Tozeur.
 </p>
@@ -461,146 +465,170 @@ Baccalauréat Informatique au Lycée al emtyez ,Tozeur.
 </div>
 </div>
 </div>
-        <div class="flex flex-wrap justify-between pt-4 -mx-6">
-         <!--1/1 col -->
-					<div class="w-full md:w-1/2 p-6 flex flex-col flex-grow flex-shrink" >
-            <div class="flex-1 bg-white rounded-t rounded-b-none overflow-hidden shadow-lg" id="Contact">
-              <div class="mr-6 ml-6  items-center py-6">
-                <p class="text-xl font-bold text-gray-900 pb-6">Informations</p>
-              <div class="flex flex-wrap justify-between">
-               <div class="flex flex-wrap justify-between">
-                <div class="shrink-0">
-                  <div class="p-4 bg-blue-600 rounded-md shadow-md w-14 h-14 flex items-center justify-center">
-                    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="dollar-sign"
-                      class="w-3 text-white" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 288 512">
-                      <path fill="currentColor"
-                        d="M209.2 233.4l-108-31.6C88.7 198.2 80 186.5 80 173.5c0-16.3 13.2-29.5 29.5-29.5h66.3c12.2 0 24.2 3.7 34.2 10.5 6.1 4.1 14.3 3.1 19.5-2l34.8-34c7.1-6.9 6.1-18.4-1.8-24.5C238 74.8 207.4 64.1 176 64V16c0-8.8-7.2-16-16-16h-32c-8.8 0-16 7.2-16 16v48h-2.5C45.8 64-5.4 118.7.5 183.6c4.2 46.1 39.4 83.6 83.8 96.6l102.5 30c12.5 3.7 21.2 15.3 21.2 28.3 0 16.3-13.2 29.5-29.5 29.5h-66.3C100 368 88 364.3 78 357.5c-6.1-4.1-14.3-3.1-19.5 2l-34.8 34c-7.1 6.9-6.1 18.4 1.8 24.5 24.5 19.2 55.1 29.9 86.5 30v48c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16v-48.2c46.6-.9 90.3-28.6 105.7-72.7 21.5-61.6-14.6-124.8-72.5-141.7z">
-                      </path>
-                    </svg>
-                  </div>
-                </div>
-                <div class="grow ml-6">
-                  <p class="font-bold mb-1 text-sm">Sales questions</p>
-                  <p class="text-gray-500 text-sm">sales@example.com</p>
-                  <p class="text-gray-500 text-sm">+1 234-567-89</p>
-                </div>
-               </div>
-               <div class="flex flex-wrap justify-between ">
-                <div class="shrink-0">
-                  <div class="p-4 bg-blue-600 rounded-md shadow-md w-14 h-14 flex items-center justify-center">
-                    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="dollar-sign"
-                      class="w-3 text-white" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 288 512">
-                      <path fill="currentColor"
-                        d="M209.2 233.4l-108-31.6C88.7 198.2 80 186.5 80 173.5c0-16.3 13.2-29.5 29.5-29.5h66.3c12.2 0 24.2 3.7 34.2 10.5 6.1 4.1 14.3 3.1 19.5-2l34.8-34c7.1-6.9 6.1-18.4-1.8-24.5C238 74.8 207.4 64.1 176 64V16c0-8.8-7.2-16-16-16h-32c-8.8 0-16 7.2-16 16v48h-2.5C45.8 64-5.4 118.7.5 183.6c4.2 46.1 39.4 83.6 83.8 96.6l102.5 30c12.5 3.7 21.2 15.3 21.2 28.3 0 16.3-13.2 29.5-29.5 29.5h-66.3C100 368 88 364.3 78 357.5c-6.1-4.1-14.3-3.1-19.5 2l-34.8 34c-7.1 6.9-6.1 18.4 1.8 24.5 24.5 19.2 55.1 29.9 86.5 30v48c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16v-48.2c46.6-.9 90.3-28.6 105.7-72.7 21.5-61.6-14.6-124.8-72.5-141.7z">
-                      </path>
-                    </svg>
-                  </div>
-                </div>
-                <div class="grow ml-6">
-                  <p class="font-bold mb-1 text-sm">Sales questions</p>
-                  <p class="text-gray-500 text-sm">sales@example.com</p>
-                  <p class="text-gray-500 text-sm">+1 234-567-89</p>
-                </div>
-               </div>
-              </div>
-         
-              <div class="flex flex-wrap justify-between mt-12">
-                <div class="flex flex-wrap justify-between">
-                 <div class="shrink-0">
-                   <div class="p-4 bg-blue-600 rounded-md shadow-md w-14 h-14 flex items-center justify-center">
-                     <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="dollar-sign"
-                       class="w-3 text-white" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 288 512">
-                       <path fill="currentColor"
-                         d="M209.2 233.4l-108-31.6C88.7 198.2 80 186.5 80 173.5c0-16.3 13.2-29.5 29.5-29.5h66.3c12.2 0 24.2 3.7 34.2 10.5 6.1 4.1 14.3 3.1 19.5-2l34.8-34c7.1-6.9 6.1-18.4-1.8-24.5C238 74.8 207.4 64.1 176 64V16c0-8.8-7.2-16-16-16h-32c-8.8 0-16 7.2-16 16v48h-2.5C45.8 64-5.4 118.7.5 183.6c4.2 46.1 39.4 83.6 83.8 96.6l102.5 30c12.5 3.7 21.2 15.3 21.2 28.3 0 16.3-13.2 29.5-29.5 29.5h-66.3C100 368 88 364.3 78 357.5c-6.1-4.1-14.3-3.1-19.5 2l-34.8 34c-7.1 6.9-6.1 18.4 1.8 24.5 24.5 19.2 55.1 29.9 86.5 30v48c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16v-48.2c46.6-.9 90.3-28.6 105.7-72.7 21.5-61.6-14.6-124.8-72.5-141.7z">
-                       </path>
-                     </svg>
-                   </div>
-                 </div>
-                 <div class="grow ml-6">
-                  <p class="font-bold mb-1 text-sm">Sales questions</p>
-                   <p class="text-gray-500 text-sm">sales@example.com</p>
-                   <p class="text-gray-500 text-sm">+1 234-567-89</p>
-                 </div>
-                </div>
-                
-                <div class="flex flex-wrap justify-between">
-                 <div class="shrink-0">
-                   <div class="p-4 bg-blue-600 rounded-md shadow-md w-14 h-14 flex items-center justify-center">
-                     <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="dollar-sign"
-                       class="w-3 text-white" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 288 512">
-                       <path fill="currentColor"
-                         d="M209.2 233.4l-108-31.6C88.7 198.2 80 186.5 80 173.5c0-16.3 13.2-29.5 29.5-29.5h66.3c12.2 0 24.2 3.7 34.2 10.5 6.1 4.1 14.3 3.1 19.5-2l34.8-34c7.1-6.9 6.1-18.4-1.8-24.5C238 74.8 207.4 64.1 176 64V16c0-8.8-7.2-16-16-16h-32c-8.8 0-16 7.2-16 16v48h-2.5C45.8 64-5.4 118.7.5 183.6c4.2 46.1 39.4 83.6 83.8 96.6l102.5 30c12.5 3.7 21.2 15.3 21.2 28.3 0 16.3-13.2 29.5-29.5 29.5h-66.3C100 368 88 364.3 78 357.5c-6.1-4.1-14.3-3.1-19.5 2l-34.8 34c-7.1 6.9-6.1 18.4 1.8 24.5 24.5 19.2 55.1 29.9 86.5 30v48c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16v-48.2c46.6-.9 90.3-28.6 105.7-72.7 21.5-61.6-14.6-124.8-72.5-141.7z">
-                       </path>
-                     </svg>
-                   </div>
-                 </div>
-                 <div class="grow ml-6">
-                   <p class="font-bold mb-1 text-sm">Sales questions</p>
-                   <p class="text-gray-500 text-sm">sales@example.com</p>
-                   <p class="text-gray-500 text-sm">+1 234-567-89</p>
-                 </div>
-                </div>
-               </div>
-              </div>
-        
-                </div>
-              </div>
-               <!--1/1 col -->
-					<div class="w-full md:w-1/2 p-6 flex flex-col flex-grow flex-shrink" >
-            <div class="flex-1 bg-white rounded-t rounded-b-none overflow-hidden shadow-lg" id="Contact">
-              <div class="mr-6 ml-6  items-center py-2 ">
+<div class="flex flex-wrap justify-between pt-4 -mx-6">
+<!--1/1 col -->
+<div class="w-full md:w-1/3 p-6 flex flex-col flex-grow flex-shrink">
+<div class="flex bg-white rounded-t rounded-b-none overflow-hidden shadow-lg" id="Contact">
+<div class="mr-6 ml-6  items-center py-6">
+<p class="text-xl font-bold text-gray-900 pb-6 space">Informations</p>
 
-                <div class="py-4  px-4 mx-auto ">
-                  <p class="text-xl font-bold text-gray-900 pb-4">Contact </p>
-                  <form action="#" class="space-y-8">
-                      <div>
-                          <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Your email</label>
-                          <input type="email" id="email" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" placeholder="name@flowbite.com" required>
-                      </div>
-                      <div>
-                          <label for="subject" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Subject</label>
-                          <input type="text" id="subject" class="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" placeholder="Let us know how we can help you" required>
-                      </div>
-                      <div class="sm:col-span-2">
-                          <label for="message" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400">Your message</label>
-                          <textarea id="message" rows="6" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Leave a comment..."></textarea>
-                      </div>
-                      <button type="submit" class="py-3 px-5 text-sm font-medium text-center text-white rounded-lg bg-primary-700 sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">Send message</button>
-                  </form>
-                </div>
-      
-              </div>
-              </div>
-              </div>
-						</div>
-					</div>
-
-				</div>
-		
-			</div>
-		</div>
+<div class="d-flex flex-wrap justify-between">
+<div class="shrink-0 zoom-hover">
+  <div class="p-4 bg-blue-600 rounded-md shadow-md w-14 h-14 flex items-center justify-center">
+      <img src="./icons/certificate.png" class="w-6 h-6">
   </div>
-	
+</div>
+<div class="grow ml-6">
+  <p class="font-bold mb-1 text-sm p-inf">Domaine d'expertise</p>
+  <p class="text-gray-500 text-sm p-inf">Ingénieur Full-Stack Js </p>
+  <p class="text-gray-500 text-sm p-inf">Node js / Angular | Mern stack</p>
+</div>
+</div>
+<br>
+<div class="d-flex flex-wrap justify-between ">
+<div class="shrink-0 zoom-hover">
+  <div class="p-4 bg-blue-600 rounded-md shadow-md w-14 h-14 flex items-center justify-center">
+    <img src="./icons/maps-and-flags.png" class="w-6 h-6">
+  </div>
+</div>
+<div class="grow ml-6">
+  <p class="font-bold mb-1 text-sm p-inf">Adresse</p>
+  <p class="text-gray-500 text-sm p-inf">Tunis / Ariana</p>
+</div>
+</div>
+<br>
+<div class="d-flex flex-wrap justify-between ">
+    <div class="shrink-0 zoom-hover">
+      <div class="p-4 bg-blue-600 rounded-md shadow-md w-14 h-14 flex items-center justify-center">
+        <img src="./icons/email.png" class="w-6 h-6">
+      </div>
+    </div>
+    <div class="grow ml-6">
+      <p class="font-bold mb-1 text-sm p-inf">Email</p>
+      <p class="text-gray-500 text-sm p-inf">barrouta.zouhaier@gmail.com</p>
+    </div>
+</div>
+</div>
+<div class="mr-6 ml-6  items-center py-6">
+    <br>
+    <br>
+    <div class="d-flex flex-wrap justify-between">
+        <div class="shrink-0 zoom-hover">
+          <div class="p-4 bg-blue-600 rounded-md shadow-md w-14 h-14 flex items-center justify-center">
+            <img src="./icons/phone-call (1).png" class="w-6 h-6">
+          </div>
+        </div>
+        <div class="grow ml-6">
+          <p class="font-bold mb-1 text-sm p-inf">Téléphone 1</p>
+          <p class="text-gray-500 text-sm p-inf">+21658595843</p>
+        </div>
+    </div>  
+    <br>   
+    <div class="d-flex flex-wrap justify-between">
+        <div class="shrink-0 zoom-hover">
+          <div class="p-4 bg-blue-600 rounded-md shadow-md w-14 h-14 flex items-center justify-center">
+            <img src="./icons/telephone (1).png" class="w-6 h-6">
+          </div>
+        </div>
+        <div class="grow ml-6">
+          <p class="font-bold mb-1 text-sm p-inf"> Téléphone 2 </p>
+          <p class="text-gray-500 text-sm p-inf"> +21624725223 </p>
+        </div>
+    </div>            
+</div>
 
 
-	<footer class="w-full m-0 p-0 bg-cover bg-bottom" style=" height: 50vh; max-height:460px; background: linear-gradient(to bottom,rgba(0, 0, 0, 0.752),rgba(0, 0, 0, 0.703)),center / cover url('./cover.jpg');">	
-				<!--Author-->
-		<div class="flex w-full items-center font-sans p-8 md:p-24">
-			<img class="w-24 h-24 rounded-full mr-4 spin" src="./img.png" alt="Avatar of Author">
-				<div class="flex-1">
-						<p class="text-white font-bold text-base md:text-xl leading-none">Ghostwind CSS</p>
-						<p class="text-gray-200 text-xs md:text-base">Tailwind CSS version of Ghost's Casper theme by TailwindToolbox.com</a></p>
-				</div>
-				<div class="justify-end">
-					<button class="bg-transparent border border-gray-500 hover:border-green-500 text-xs text-gray-500 hover:text-green-500 font-bold py-2 px-4 rounded-full" onclick="scrollTopAnimated()">Read More</button>
-		    	</div>
-		</div>
-				<!--/Author-->
-	</footer>
+</div>
 
-	<script src="https://unpkg.com/popper.js@1/dist/umd/popper.min.js"></script>
-	<script src="https://unpkg.com/tippy.js@4"></script>
-	<script src="https://code.jquery.com/jquery-3.4.1.min.js"> </script>
-	<script src= "./scripts.js"> </script>
+</div>
+<div class="w-full md:w-1/3 p-6 px-6 flex flex-col flex-grow flex-shrink">
+    <div class="flex-1 bg-white rounded-t rounded-b-none overflow-hidden shadow-lg">
+        <form action="#" class="space-y-8 py-6 px-6">
+            <div>
+              <label for="email"
+                class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Email</label>
+              <input type="email" id="email"
+                class="shadow-sm  border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5  dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
+                placeholder="Email" required>
+            </div>
+            <div>
+              <label for="subject"
+                class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Objet</label>
+              <input type="text" id="subject"
+                class="block p-3 w-full text-sm text-gray-900  rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500  dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
+                placeholder="Objet" required>
+            </div>
+            <div class="sm:col-span-2">
+              <label for="message"
+                class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400">Message</label>
+              <textarea id="message" rows="6"
+                class="block p-2.5 w-full text-sm text-gray-900  rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500  dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                placeholder="Message"></textarea>
+            </div>
+            <button type="submit"
+              class="py-3 px-5 text-sm font-medium text-center text-white rounded-lg bg-blue-600 sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">Send
+              message</button>
+          </form>
+    </div>
+</div>
 
+
+</div>
+
+    </div> 
+    </div>
+</body>
+<footer class="w-full m-0 p-0 bg-cover bg-bottom"
+    style=" height: 50vh; max-height:460px; background: linear-gradient(to bottom,rgba(0, 0, 0, 0.752),rgba(0, 0, 0, 0.703)),center / cover url('./cover.jpg');">
+    <!--Author-->
+    <div class="flex w-full items-center font-sans p-8 md:p-24">
+      <img class="w-24 h-24 rounded-full mr-4" src="./img.png" alt="Avatar of Author">
+      <div class="flex-1">
+        <p class="text-white font-bold text-base md:text-xl leading-none">Bienvenue</p>
+      </div>
+      <div class="flex flex-wrap justify-center gap-2 px-4">
+        <button class="bg-blue-500 p-2 font-semibold text-white inline-flex items-center space-x-2 rounded zoom-hover" onclick="redirectToFacebook()">
+          <svg class="w-5 h-5 fill-current" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" /></svg>
+        </button>
+
+        <button class="bg-blue-400 p-2 font-semibold text-white inline-flex items-center space-x-2 rounded zoom-hover">
+          <svg class="w-5 h-5 fill-current" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z" /></svg>
+        </button>
+
+        <button class="bg-red-500 p-2 font-semibold text-white inline-flex items-center space-x-2 rounded zoom-hover">
+          <svg class="w-5 h-5 fill-current" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0zm5.01 4.744c.688 0 1.25.561 1.25 1.249a1.25 1.25 0 0 1-2.498.056l-2.597-.547-.8 3.747c1.824.07 3.48.632 4.674 1.488.308-.309.73-.491 1.207-.491.968 0 1.754.786 1.754 1.754 0 .716-.435 1.333-1.01 1.614a3.111 3.111 0 0 1 .042.52c0 2.694-3.13 4.87-7.004 4.87-3.874 0-7.004-2.176-7.004-4.87 0-.183.015-.366.043-.534A1.748 1.748 0 0 1 4.028 12c0-.968.786-1.754 1.754-1.754.463 0 .898.196 1.207.49 1.207-.883 2.878-1.43 4.744-1.487l.885-4.182a.342.342 0 0 1 .14-.197.35.35 0 0 1 .238-.042l2.906.617a1.214 1.214 0 0 1 1.108-.701zM9.25 12C8.561 12 8 12.562 8 13.25c0 .687.561 1.248 1.25 1.248.687 0 1.248-.561 1.248-1.249 0-.688-.561-1.249-1.249-1.249zm5.5 0c-.687 0-1.248.561-1.248 1.25 0 .687.561 1.248 1.249 1.248.688 0 1.249-.561 1.249-1.249 0-.687-.562-1.249-1.25-1.249zm-5.466 3.99a.327.327 0 0 0-.231.094.33.33 0 0 0 0 .463c.842.842 2.484.913 2.961.913.477 0 2.105-.056 2.961-.913a.361.361 0 0 0 .029-.463.33.33 0 0 0-.464 0c-.547.533-1.684.73-2.512.73-.828 0-1.979-.196-2.512-.73a.326.326 0 0 0-.232-.095z" /></svg>
+        </button>
+
+        <button class="bg-pink-600 p-2 font-semibold text-white inline-flex items-center space-x-2 rounded zoom-hover">
+          <svg class="w-5 h-5 fill-current" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 5.079 3.158 9.417 7.618 11.162-.105-.949-.199-2.403.041-3.439.219-.937 1.406-5.957 1.406-5.957s-.359-.72-.359-1.781c0-1.663.967-2.911 2.168-2.911 1.024 0 1.518.769 1.518 1.688 0 1.029-.653 2.567-.992 3.992-.285 1.193.6 2.165 1.775 2.165 2.128 0 3.768-2.245 3.768-5.487 0-2.861-2.063-4.869-5.008-4.869-3.41 0-5.409 2.562-5.409 5.199 0 1.033.394 2.143.889 2.741.099.12.112.225.085.345-.09.375-.293 1.199-.334 1.363-.053.225-.172.271-.401.165-1.495-.69-2.433-2.878-2.433-4.646 0-3.776 2.748-7.252 7.92-7.252 4.158 0 7.392 2.967 7.392 6.923 0 4.135-2.607 7.462-6.233 7.462-1.214 0-2.354-.629-2.758-1.379l-.749 2.848c-.269 1.045-1.004 2.352-1.498 3.146 1.123.345 2.306.535 3.55.535 6.607 0 11.985-5.365 11.985-11.987C23.97 5.39 18.592.026 11.985.026L12.017 0z" /></svg>
+        </button>
+
+        <button class="bg-blue-600 p-2 font-semibold text-white inline-flex items-center space-x-2 rounded zoom-hover" onclick="redirectToLinkedin()">
+          <svg class="w-5 h-5 fill-current" role="img" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
+            <g><path d="M218.123122,218.127392 L180.191928,218.127392 L180.191928,158.724263 C180.191928,144.559023 179.939053,126.323993 160.463756,126.323993 C140.707926,126.323993 137.685284,141.757585 137.685284,157.692986 L137.685284,218.123441 L99.7540894,218.123441 L99.7540894,95.9665207 L136.168036,95.9665207 L136.168036,112.660562 L136.677736,112.660562 C144.102746,99.9650027 157.908637,92.3824528 172.605689,92.9280076 C211.050535,92.9280076 218.138927,118.216023 218.138927,151.114151 L218.123122,218.127392 Z M56.9550587,79.2685282 C44.7981969,79.2707099 34.9413443,69.4171797 34.9391618,57.260052 C34.93698,45.1029244 44.7902948,35.2458562 56.9471566,35.2436736 C69.1040185,35.2414916 78.9608713,45.0950217 78.963054,57.2521493 C78.9641017,63.090208 76.6459976,68.6895714 72.5186979,72.8184433 C68.3913982,76.9473153 62.7929898,79.26748 56.9550587,79.2685282 M75.9206558,218.127392 L37.94995,218.127392 L37.94995,95.9665207 L75.9206558,95.9665207 L75.9206558,218.127392 Z M237.033403,0.0182577091 L18.8895249,0.0182577091 C8.57959469,-0.0980923971 0.124827038,8.16056231 -0.001,18.4706066 L-0.001,237.524091 C0.120519052,247.839103 8.57460631,256.105934 18.8895249,255.9977 L237.033403,255.9977 C247.368728,256.125818 255.855922,247.859464 255.999,237.524091 L255.999,18.4548016 C255.851624,8.12438979 247.363742,-0.133792868 237.033403,0.000790807055"></path></g>
+          </svg>
+        </button>
+
+        <button class="bg-red-600 p-2 font-semibold text-white inline-flex items-center space-x-2 rounded zoom-hover">
+          <svg class="w-5 h-5 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z" /></svg>
+        </button>
+
+        <button class="bg-gray-700 p-2 font-semibold text-white inline-flex items-center space-x-2 rounded zoom-hover" onclick="redirectToGit()">
+          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="w-5" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24">
+            <g fill="none"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385c.6.105.825-.255.825-.57c0-.285-.015-1.23-.015-2.235c-3.015.555-3.795-.735-4.035-1.41c-.135-.345-.72-1.41-1.23-1.695c-.42-.225-1.02-.78-.015-.795c.945-.015 1.62.87 1.845 1.23c1.08 1.815 2.805 1.305 3.495.99c.105-.78.42-1.305.765-1.605c-2.67-.3-5.46-1.335-5.46-5.925c0-1.305.465-2.385 1.23-3.225c-.12-.3-.54-1.53.12-3.18c0 0 1.005-.315 3.3 1.23c.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23c.66 1.65.24 2.88.12 3.18c.765.84 1.23 1.905 1.23 3.225c0 4.605-2.805 5.625-5.475 5.925c.435.375.81 1.095.81 2.22c0 1.605-.015 2.895-.015 3.3c0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z" fill="currentColor" /></g>
+          </svg>
+        </button>
+
+        <button class="bg-red-500 p-2 font-semibold text-white inline-flex items-center space-x-2 rounded zoom-hover">
+          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="w-5" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><g fill="none"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 0C5.372 0 0 5.373 0 12s5.372 12 12 12c6.627 0 12-5.373 12-12S18.627 0 12 0zm.14 19.018c-3.868 0-7-3.14-7-7.018c0-3.878 3.132-7.018 7-7.018c1.89 0 3.47.697 4.682 1.829l-1.974 1.978v-.004c-.735-.702-1.667-1.062-2.708-1.062c-2.31 0-4.187 1.956-4.187 4.273c0 2.315 1.877 4.277 4.187 4.277c2.096 0 3.522-1.202 3.816-2.852H12.14v-2.737h6.585c.088.47.135.96.135 1.474c0 4.01-2.677 6.86-6.72 6.86z" fill="currentColor"/></g></svg>
+        </button>
+      </div>
+      <div class="justify-end py-4">
+        <button
+          class="bg-transparent border border-gray-500 hover:border-green-500 text-xs text-gray-500 hover:text-green-500 font-bold py-2 px-4 rounded-full "
+          onclick="scrollTopAnimated()">Retourner au menu principal</button>
+      </div>
+    </div>
+    <!--/Author-->
+  </footer>
 </html>

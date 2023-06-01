@@ -1,42 +1,19 @@
   @media (max-width: 1029px) {
-    .flex{
-        display: inline;
-    }
-    div{
-      text-align: center;  
-    }
-   
-    a{
-      background-color: black !important; 
-      border-radius: 6px !important;
-      border: 1px solid darkgoldenrod !important;
-      color: darkgoldenrod;
-      width: 100% !important;
-      text-align: center!important;
-      padding-bottom: 5px !important;
-      height: 45px;
-    }
-    li{
-        padding-top: 5px !important;
-        padding-bottom: 5px !important;
-    }
-    img{ 
-        display: inline !important;
-    }
-    span{
-      color: darkgoldenrod !important;
-    }
     body{
-        text-align: center!important;
+        text-align: center;
     }
-    svg{
-        width: 15px !important;
-        display: inline;
+    img{
+        text-align: center;
     }
-    p{
-        padding-top: 5px !important;
-        padding-bottom: 5px !important;
+    .d-flex{
+        display: inline-block !important;
     }
+    .social-top{
+        margin-top: 0.25rem !important;
+    }
+  }
+  .d-flex{
+    display: flex;
   }
   @keyframes opacity-anim {
       from { opacity: 0;  }
@@ -46,9 +23,13 @@
       from { margin-top: -10rem; }
       to { margin-top: -8rem; }
     }
-      @keyframes top-anim {
-      from { margin-top: -4rem; }
-      to { margin-top: 0rem; }
+    @keyframes top-anim {
+      from { margin-top: 5rem;}
+      to { margin-top: -5rem; }
+    }
+    @keyframes height-anim {
+      from { height: 70vh;}
+      to { height: 50vh; }
     }
     @keyframes down-anim {
       from { margin-bottom: -4rem; }
@@ -74,11 +55,12 @@
         }
       }
 .top-anim {animation:top-anim 6s; }
+.height-anim {animation:height-anim 6s; }
 .card-anim {animation:card-anim 6s; margin-top: -8rem }
 .down-anim {animation:down-anim 6s; }
 .opacity-anim {animation:opacity-anim 6s; }
-.zoom-anim {animation:zoom-anim 6s; }
-.zoom-hover:hover{ transform: scale(1.2); }
+.zoom-anim {animation:zoom-anim 6s; cursor: pointer;}
+.zoom-hover:hover{ transform: scale(1.2); cursor: pointer;}
 
 .icon-anim{
     position: relative;
@@ -86,8 +68,11 @@
     animation-duration: 4s;
     animation-iteration-count: 2;
     animation-direction: alternate;  
-  }
-  
+}
+.d-flex{
+  display: flex;
+  justify-content: between !important;
+}
   @keyframes example {
     0%   {left:0%;transform: rotate(0deg); }
     50%  {left:100%; transform: rotate(360deg); }
@@ -272,3 +257,9 @@
       transform: translateX(0%);
     }
   }
+.bg-dark{
+  background-color: #020617;
+}
+.bg-night{
+background-color: #0f172a;
+}
