@@ -39,3 +39,8 @@ function redirectToMgnic() {
 function redirectToGit() {
     window.open("https://github.com/Zouhaier-GL3")
 }
+tippy('a', {
+    duration: 0,
+    arrow: false,
+    delay: [1000, 200]
+});

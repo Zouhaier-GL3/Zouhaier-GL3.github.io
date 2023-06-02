@@ -5,11 +5,15 @@
     img{
         text-align: center;
     }
-    .d-flex{
-        display: inline-block !important;
-    }
     .social-top{
         margin-top: 0.25rem !important;
+    }
+    .inline{
+      display: inline-block !important;
+      text-align: start !important;
+    }
+    .d-flex{
+      display: inline-block !important;
     }
   }
   .d-flex{
