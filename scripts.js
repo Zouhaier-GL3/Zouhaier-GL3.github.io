@@ -26,8 +26,8 @@ function redirectToLinkedin() {
     window.open("https://www.linkedin.com/in/zouhaier-barrouta/", "_blank");
 }
 
-function redirectToAdinn() {
-    window.open("https://www.bing.com/search?q=addinn&cvid=4a1f5db0537e41d69d8224298c98f8e2&aqs=edge.0.69i59j69i57j0j69i59j46j69i59j69i61j69i60l2j69i11004.2054j0j9&FORM=ANAB01&PC=U531", "_blank");
+function redirectToAddinn(){
+    window.open("https://addinn-group.com", "_blank");
 }
 function redirectToItqan() {
     window.open("https://itqanlabs.com", "_blank");
