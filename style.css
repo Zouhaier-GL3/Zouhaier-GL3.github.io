@@ -5,6 +5,10 @@
     img{
         text-align: center;
     }
+    .px-12{
+      padding-left: 5px !important;
+      padding-right: 5px !important;
+    }
     .font-mobile{
       font-size: 10px !important;
       font-weight: 400px !important;
