@@ -1,10 +1,5 @@
 tippy('.avatar')
 
-// scroll top
-function scrollTopAnimated() {
-    $("html, body").animate({ scrollTop: "0" });
-}
-
 // slow navigaton Animation
 $(document).on("click","a",function(e){
     e.preventDefault();
