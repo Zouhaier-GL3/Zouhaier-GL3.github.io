@@ -12,7 +12,7 @@
       padding-left: 5px !important;
       padding-right: 5px !important;
     }
-    .font-mobile{
+    .font-mobile + p{
       font-size: 10px !important;
       font-weight: 400px !important;
     }
