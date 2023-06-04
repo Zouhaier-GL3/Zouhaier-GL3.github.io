@@ -5,6 +5,10 @@
     img{
         text-align: center;
     }
+    .font-mobile{
+      font-size: 10px !important;
+      font-weight: 400px !important;
+    }
     .social-top{
         margin-top: 0.25rem !important;
     }
@@ -14,6 +18,9 @@
     }
     .d-flex{
       display: inline-block !important;
+    }
+    .P-2{
+      padding: 0.25rem !important;
     }
   }
   .d-flex{
