@@ -5,6 +5,9 @@
     img{
         text-align: center;
     }
+    .profile{
+      display:none !important;
+    }
     .px-12{
       padding-left: 5px !important;
       padding-right: 5px !important;
