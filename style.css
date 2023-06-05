@@ -63,19 +63,19 @@
     }
    
 
-    .spin {
-        animation: spin 50s linear infinite;
-        animation-delay: calc(var(--delay) * -1s);
-      }
+.spin {
+  animation: spin 20s linear infinite;
+  animation-delay: calc(var(--delay) * -1s);
+}
       
-      @keyframes spin {
-        from {
-          transform: rotate(0deg);
-        }
-        to {
-          transform: rotate(360deg);
-        }
-      }
+@keyframes spin {
+  from {
+        transform: rotate(0deg);
+       }
+  to  {
+        transform: rotate(360deg);
+     }
+}
 .top-anim {animation:top-anim 6s; }
 .height-anim {animation:height-anim 6s; }
 .card-anim {animation:card-anim 6s; margin-top: -8rem }
