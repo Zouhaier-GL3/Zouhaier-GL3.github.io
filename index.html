@@ -12,6 +12,7 @@
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,600,600i,700,700i" rel="stylesheet">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abel|Archivo+Black|Barlow">
   <link rel="stylesheet" href="https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"/>
   <!--Replace with your tailwind.css once created-->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css" rel="stylesheet">
   <title>Portfolio Zouhaier</title>
@@ -28,12 +29,12 @@
 
 
 <body>
-  <div class="bg-gray-200">
+  <div class="bg-dark">
     <!-- component -->
-    <section class="sticky top-0 z-30 w-full pl-2 py-2 bg-dark shadow-xl">
-      <div class="flex justify-between ">
+    <section class="sticky top-0 z-30 w-full pl-2 py-2 shadow-xl " style=" background: linear-gradient(to bottom,rgba(0, 0, 0, 0.752),rgba(0, 0, 0, 0.703)), center / cover url('./cover.jpg');">
+      <div class="flex justify-between opacity-100">
         <img src="./img.png" alt=""
-        class="rounded-full  h-6 w-6 bg-gray-200 mt-1 profile spin">
+        class="rounded-full  h-6 w-6 bg-gray-200 mt-1 profile spin ">
    
         <div class="flex items-center space-x-1">
           <ul class="space-x-2 flex items-center">
@@ -58,7 +59,6 @@
 
         </div>
         <div>
-      
           <button onclick="redirectToCv()"
                 class=" flex rounded-lg py-1 px-2 text-center hover:shadow-lg hover:shadow-blue-500/50 border-2 text-blue-500 border-blue-500 hover:text-gray-800 dark:hover:text-blue-600 hover:border-blue-500 mx-1.5 sm:mx-4 text-xs font-meduim ">
                 <span>cv.pdf</span>
@@ -71,17 +71,17 @@
       </div>
     </section>
     <section id="Home">
-      <div class="overflow-hidden shadow ">
-        <div class="header">
+      <div class="overflow-hidden shadow px-4">
+        <div class="header rounded-b-lg ">
         </div>
       </div>
       <div class="-mt-20 top-anim flex justify-center">
         <img src="./img.png" alt=""
-          class="rounded-full border-solid border-gray-200 border-2 -mt-3 w-48 bg-gray-200 text-center items-center">
+          class="rounded-full border-solid border-gray-200 border-2 -mt-3 w-48 bg-white text-center items-center">
       </div>
       <div class="text-center px-3 pb-6 pt-2">
-        <h3 class="text-black text-2xl font-bold ">Zouhaier Barrouta</h3>
-        <p class="mt-2  text-sm font-sans font-light text-grey-700">Full-stack js developer</p>
+        <h3 class="text-black text-2xl font-bold text-white">Zouhaier Barrouta</h3>
+        <p class="mt-2  text-sm font-sans font-light text-white">Full-stack js developer</p>
       </div>
       <div>
         <div class="d-flex justify-between -mt-24 social-top px-12">
@@ -154,22 +154,22 @@
               class="container flex items-center justify-center p-3 mx-auto text-gray-600 capitalize dark:text-gray-300">
 
               <a href="#Experiences"
-                class="hover:shadow-lg hover:shadow-blue-500/50 border-b-2 text-gray-800 border-transparent hover:text-gray-800 dark:hover:text-gray-900 hover:border-blue-500 mx-1.5 sm:mx-4 text-sm font-bold">Expériences</a>
+                class="text-white hover:shadow-lg hover:shadow-blue-500/50 border-b-2 text-gray-800 border-transparent hover:text-blue-500 dark:hover:text-blue-500 hover:border-blue-500 mx-1.5 sm:mx-4 text-sm font-bold">Expériences</a>
 
               <a href="#Competances"
-                class="hover:shadow-lg hover:shadow-blue-500/50 border-b-2 text-gray-800 border-transparent hover:text-gray-800 dark:hover:text-gray-900 hover:border-blue-500 mx-1.5 sm:mx-4 text-sm font-bold">Compétences</a>
+                class="text-white hover:shadow-lg hover:shadow-blue-500/50 border-b-2 text-gray-800 border-transparent hover:text-blue-500 dark:hover:text-blue-500 hover:border-blue-500 mx-1.5 sm:mx-4 text-sm font-bold">Compétences</a>
 
               <a href="#Diplomes"
-                class="hover:shadow-lg hover:shadow-blue-500/50 border-b-2 text-gray-800 border-transparent hover:text-gray-800 dark:hover:text-gray-900 hover:border-blue-500 mx-1.5 sm:mx-4 text-sm font-bold">Diplômes</a>
+                class="text-white hover:shadow-lg hover:shadow-blue-500/50 border-b-2 text-gray-800 border-transparent hover:text-blue-500 dark:hover:text-blue-500 hover:border-blue-500 mx-1.5 sm:mx-4 text-sm font-bold">Diplômes</a>
 
               <a href="#Contact"
-                class="hover:shadow-lg hover:shadow-blue-500/50 border-b-2 text-gray-800 border-transparent hover:text-gray-800 dark:hover:text-gray-900 hover:border-blue-500 mx-1.5 sm:mx-4 text-sm font-bold">Contact</a>
+                class="text-white hover:shadow-lg hover:shadow-blue-500/50 border-b-2 text-gray-800 border-transparent hover:text-blue-500 dark:hover:text-blue-500 hover:border-blue-500 mx-1.5 sm:mx-4 text-sm font-bold">Contact</a>
             </div>
           </div>
         </div>
 
         <div class="px-12 py-8 mt-4">
-          <div class="rounded-lg bg-center bg-cover bg-no-repeat items-center justify-center flex flex-col"
+          <div class="rounded-lg bg-center bg-cover bg-no-repeat items-center justify-center flex flex-col" 
             style=" background: linear-gradient(to bottom,rgba(0, 0, 0, 0.752),rgba(0, 0, 0, 0.703)),center / cover url('./cover.jpg');">
             <div class=" justify-center w-full p-6 flex flex-col">
               <div
@@ -208,11 +208,11 @@
                   <div class="container px-4 py-8 mx-auto">
                     <div class="-my-8 divide-y-2 divide-gray-100">
                       <div class="py-8 flex flex-wrap md:flex-nowrap">
-                        <div class="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
+                        <div class="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col"data-aos="fade-right" data-aos-duration="1000">
                           <p class="text-xl font-bold text-gray-900"">ADDINN Group – Développeur Frontend </span>
         <p class=" mt-1 text-blue-600 text-sm font-mobile">Du: 15/02/2021 Jusqu'à: 30/02/2023</p>
                         </div>
-                        <div class="md:flex-grow bg-gray-200 rounded-lg p-4 inline">
+                        <div class="md:flex-grow bg-gray-200 rounded-lg p-4 inline" data-aos="fade-left" data-aos-duration="1000">
                           <p class="text-xl font-bold text-gray-900">Sommaire des activités réalisées en rapport avec
                             les
                             services :</p>
@@ -271,11 +271,11 @@
                   <div class="container px-4 py-8 mx-auto">
                     <div class="-my-8 divide-y-2 divide-gray-100">
                       <div class="py-8 flex flex-wrap md:flex-nowrap">
-                        <div class="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
+                        <div class="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col"data-aos="fade-right" data-aos-duration="1000">
                           <p class="text-xl font-bold text-gray-900""> ITQAN Tunisie – Développeur web</p>
         <p class=" mt-1 text-blue-600 text-sm font-mobile">Du: 15/02/2020 Jusqu'à: 15/08/2020</p>
                         </div>
-                        <div class="md:flex-grow  bg-gray-200 rounded-lg p-4 inline">
+                        <div class="md:flex-grow  bg-gray-200 rounded-lg p-4 inline" data-aos="fade-left" data-aos-duration="1000">
                           <p class="text-xl font-bold text-gray-900">Sommaire des activités réalisées en rapport avec
                             les
                             services :</p>
@@ -325,11 +325,11 @@
                   <div class="container px-4 py-8 mx-auto">
                     <div class="-my-8 divide-y-2 divide-gray-100">
                       <div class="py-8 flex flex-wrap md:flex-nowrap">
-                        <div class="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
+                        <div class="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col"data-aos="fade-right" data-aos-duration="1000">
                           <p class="text-xl font-bold text-gray-900"">M-GNIC Tunisie - Superviseur Telecom</p>
         <p class=" mt-1 text-blue-600 text-sm font-mobile">Du: 11/07/2013 Jusqu'à: 30/06/2018</p>
                         </div>
-                        <div class="md:flex-grow  bg-gray-200 rounded-lg p-4 inline">
+                        <div class="md:flex-grow  bg-gray-200 rounded-lg p-4 inline" data-aos="fade-left" data-aos-duration="1000">
                           <p class="text-xl font-bold text-gray-900">Sommaire des activités réalisées en rapport avec
                             les
                             services :</p>
@@ -374,11 +374,13 @@
             <div class="w-full md:w-1/2 p-6 flex flex-col flex-grow flex-shrink">
               <div class="flex-1 bg-white rounded-t rounded-b-none overflow-hidden shadow-lg">
                 <div class="mr-6 ml-6  items-center py-6 ">
+                  <div data-aos="fade-right" data-aos-duration="1000">
                   <p class="text-xl font-bold text-gray-900">Mes Experiences</p>
                   <p class="text-xl font-medium text-gray-900">Développement et intégration des interfaces avec Angular
                     13
                     (Angular Framework).</p>
-                  <div class="bg-gray-200 rounded-lg p-4 mt-2">
+                  </div>
+                  <div class="bg-gray-200 rounded-lg p-4 mt-2" data-aos="fade-right" data-aos-duration="1000">
                     <div
                       class="bg-transparent border border-gray-500 hover:border-green-500 text-xs text-gray-500 hover:text-green-500 font-bold py-2 px-4 rounded-full text-center">
                       <p>Projet 1 : Solution Poc Réclamation</p>
@@ -390,7 +392,7 @@
                     <p class="text-sm mt-1 mr-0 mb-0 ml-0 font-semi-bold text-gray-700 mb-5"><span
                         class="font-medium">Technologie utilisé :</span> ASP.Net Core / Angular13</p>
                   </div>
-                  <div class="bg-gray-200 rounded-lg p-4 mt-2">
+                  <div class="bg-gray-200 rounded-lg p-4 mt-2" data-aos="fade-right" data-aos-duration="1000">
                     <div
                       class="bg-transparent border border-gray-500 hover:border-green-500 text-xs text-gray-500 hover:text-green-500 font-bold py-2 px-4 rounded-full text-center">
                       <p>Projet 2 : Solution FTUSA</p>
@@ -402,7 +404,7 @@
                     <p class="text-sm mt-1 mr-0 mb-0 ml-0 font-semi-bold text-gray-700 mb-5"><span
                         class="font-medium">Technologies utilisées : </span> ASP.Net Core / Angular13</p>
                   </div>
-                  <div class="bg-gray-200 rounded-lg p-4 mt-2">
+                  <div class="bg-gray-200 rounded-lg p-4 mt-2" data-aos="fade-right" data-aos-duration="1000">
                     <div
                       class="bg-transparent border border-gray-500 hover:border-green-500 text-xs text-gray-500 hover:text-green-500 font-bold py-2 px-4 rounded-full text-center">
                       <p>Projet 3 : Smart Claim</p>
@@ -421,7 +423,7 @@
             <!--1/2 col -->
             <div class="w-full md:w-1/2 p-6 flex flex-col flex-grow flex-shrink">
               <div class="flex-none bg-white rounded-b rounded-lg overflow-hidden shadow-lg px-6 pb-8">
-                <div class="slide-container rounded py-8">
+                <div class="slide-container rounded py-8" data-aos="fade-left" data-aos-duration="1000">
                   <span id="slider1"></span>
                   <span id="slider2"></span>
                   <span id="slider3"></span>
@@ -450,7 +452,7 @@
                 </div>
                 <p class="text-xl font-medium text-gray-900 mt-8">Développement et intégration des interfaces avec ADF
                   (Alfresco Framework).</p>
-                <div class="bg-gray-200 rounded-lg p-4 mt-2">
+                <div class="bg-gray-200 rounded-lg p-4 mt-2" data-aos="fade-left" data-aos-duration="1000">
                   <div
                     class="bg-transparent border border-gray-500 hover:border-green-500 text-xs text-gray-500 hover:text-green-500 font-bold py-2 px-4 rounded-full text-center">
                     <p>Projet 4 :Solution Digi Recouvrement/ GED </p>
@@ -550,9 +552,9 @@
 <div class=" w-full md:w-full p-6 flex flex-col flex-grow flex-shrink">
             <div class="flex-1 bg-white rounded-t rounded-b-none overflow-hidden shadow-lg" id="Diplomes">
               <div class="mr-6 ml-6  items-center py-6 ">
-                <p class="text-xl font-bold text-gray-900 space">Mes Diplômes</p>
+                <p class="text-xl font-bold text-gray-900 space"data-aos="fade-right" data-aos-duration="1000" >Mes Diplômes</p>
 
-                <div class="bg-gray-200 rounded-lg pt-4 pb-1 px-4 mt-2">
+                <div class="bg-gray-200 rounded-lg pt-4 pb-1 px-4 mt-2" data-aos="fade-left" data-aos-duration="1000">
                   <p class="text-xl font-meduim">
                     Diplôme National D’ingénieur en Génie Logiciel Du: 2018/2019 Jusqu'à: 2020/2021.
                   </p>
@@ -561,7 +563,7 @@
                   </p>
                 </div>
 
-                <div class="bg-gray-200 rounded-lg pt-4 pb-1 px-4 mt-2">
+                <div class="bg-gray-200 rounded-lg pt-4 pb-1 px-4 mt-2" data-aos="fade-left" data-aos-duration="1000">
                   <p class="text-xl font-meduim">Diplôme Technicien Supérieur en Réseaux et Télécommunications Du:
                     2008/2009
                     Jusqu'à: 2011/2012.</p>
@@ -570,7 +572,7 @@
                   </p>
                 </div>
 
-                <div class="bg-gray-200 rounded-lg pt-4 pb-1 px-4 mt-2">
+                <div class="bg-gray-200 rounded-lg pt-4 pb-1 px-4 mt-2" data-aos="fade-left" data-aos-duration="1000">
                   <p class="text-xl font-meduim">Baccalauréat Du: 1995/1996 Jusqu'à: 2008/2009.</p>
                   <p class="text-sm mt-1 mr-0 mb-0 ml-0 font-semi-bold text-gray-700 mb-5">
                     Baccalauréat Informatique au Lycée al emtyez ,Tozeur.
@@ -584,11 +586,11 @@
           <!--1/1 col -->
           <div class="w-full md:w-1/2 p-6 flex flex-col flex-grow flex-shrink">
             <div class=" bg-white rounded-t rounded-b-none overflow-hidden shadow-lg p-6" id="Contact">
-              <p class="text-xl font-bold text-gray-900 pb-5">Informations</p>
+              <p class="text-xl font-bold text-gray-900 pb-5"data-aos="fade-right" data-aos-duration="1000">Informations</p>
               <div class="#">
-                <div class="flex flex-col pb-4 bg-white rounded-lg">
+                <div class="flex flex-col pb-4 bg-white rounded-lg"data-aos="fade-right" data-aos-duration="1000">
                   <div class="flex items-center justify-between">
-                    <div class="flex items-center">
+                    <div class="flex items-center" >
                       <img src="./icons/certificate.png"
                         class="w-10 h-10 rounded-lg p-2 border border-blue-600 text-blue-400 bg-blue-600 zoom-hover">
                       <div class="flex flex-col ml-3 inline">
@@ -599,7 +601,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="flex flex-col py-4 bg-white rounded-lg">
+                <div class="flex flex-col py-4 bg-white rounded-lg"data-aos="fade-right" data-aos-duration="1000">
                   <div class="flex items-center justify-between">
                     <div class="flex items-center">
                       <img src="./icons/maps-and-flags.png"
@@ -611,7 +613,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="flex flex-col py-4 bg-white rounded-lg">
+                <div class="flex flex-col py-4 bg-white rounded-lg"data-aos="fade-right" data-aos-duration="1000">
                   <div class="flex items-center justify-between">
                     <div class="flex items-center">
                       <img src="./icons/email.png"
@@ -623,7 +625,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="flex flex-col py-4 bg-white rounded-lg">
+                <div class="flex flex-col py-4 bg-white rounded-lg"data-aos="fade-right" data-aos-duration="1000">
                   <div class="flex items-center justify-between">
                     <div class="flex items-center">
                       <img src="./icons/phone-call (1).png"
@@ -635,7 +637,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="flex flex-col py-4 bg-white rounded-lg">
+                <div class="flex flex-col py-4 bg-white rounded-lg"data-aos="fade-right" data-aos-duration="1000">
                   <div class="flex items-center justify-between">
                     <div class="flex items-center">
                       <img src="./icons/telephone (1).png"
@@ -653,7 +655,7 @@
 
           <div class="w-full md:w-1/2 p-6 px-6 flex flex-col flex-grow flex-shrink">
             <div class="flex-1 bg-white rounded-t rounded-b-none overflow-hidden shadow-lg">
-              <form action="#" class="space-y-8 py-6 px-6">
+              <form action="#" class="space-y-8 py-6 px-6"data-aos="fade-left" data-aos-duration="1000">
                 <p class="text-xl font-bold text-gray-900  space">Contact</p>
                 <div class="relative h-10 w-full min-w-[200px]">
                   <input
@@ -720,5 +722,10 @@
 function scrollTopAnimated() {
     $("html, body").animate({ scrollTop: "0" });
 }
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+<script>
+  AOS.init();
 </script>
 </html>
